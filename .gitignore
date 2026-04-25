@@ -1,0 +1,39 @@
+# ── Large data files ─────────────────────────────────────────────────────────
+*.xml
+*.npy
+*.csv
+# Allow the small sample file in data/ and the evaluation output
+!data/sample_essays.csv
+!outputs/rag_evaluation_results.csv
+
+# ── Paper source files ────────────────────────────────────────────────────────
+*.tex
+*.bib
+*.pdf
+*.aux
+*.log
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── System files ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+env/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Model / binary files ──────────────────────────────────────────────────────
+*.bin
+*.pt
+*.onnx
+
+# ── Misc intermediate outputs ─────────────────────────────────────────────────
+*.gml
+cluster_inspection.txt

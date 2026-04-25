@@ -1,0 +1,94 @@
+writing_id,a1_sequence,c2_sequence,edit_distance,missing_moves,feedback,metric1_move_mention,metric2_structural_focus,metric3_edit_reduction
+920337,Self_Introduction → Self_Introduction → Physical_Description → Social_Closing,Information_Reporting → Physical_Description → Social_Closing,2,['Information_Reporting'],"Your essay is about Antonio. In it, you told us where he lives and how old he is. You also said what he looks like and that he's always busy. Now, let me give you some feedback on your structure.
+
+Currently, you're doing the same thing over and over: talking about Antonio. The C2 example we looked at does something different by telling a bit more information first and then moving to other details. 
+
+To make it better, you could add one more move after introducing yourself. Maybe tell us why you work with Antonio or what kind of help he needs sometimes. That way, your essay will have some variety.
+
+Keep writing!",1,0.0088,-0.5
+532209,Social_Opening → Self_Introduction → Self_Introduction → Social_Closing → Social_Closing,Social_Opening → Social_Closing → Social_Closing → Social_Closing,2,[],"Hi Emily! Your essay is doing a great job with introducing yourself and your family. Now you're using three Social_Opening, then three Self_Introduction, and finally two Social_Closing moves. This pattern is nice because it's clear and easy to follow.
+
+The C2 example did something different with just four moves: they had one Social_Opening, one or two Self_Introductions, and three more Social_Closings. You could try adding a bit more of that variety in your own writing to make it even better!
+
+For example, after introducing yourself, you might want to add a move about where you live. Like this: ""Hi Maria! Nice to meet you. I'm Emily from Sichuan in China. I work as an office worker in Chengdu."" Then you can follow that with more information like your age and family details.
+
+Try adding one of those extra moves, such as talking a bit about where you live or what kind of job you have. This will help keep the structure interesting and make your writing flow better!",1,0.0179,0.0
+464727,Self_Introduction → Self_Introduction → Self_Introduction → Information_Reporting → Information_Reporting,Information_Reporting → Information_Reporting,3,[],"Okay, let's look at your essay structure together!
+
+Now you are using only three types of moves: Self_Introduction and Information_Reporting. The C2 example uses two different kinds of moves to show a more interesting story.
+
+In the C2 example, they used another type called ""Information_Reporting"" after Self_Introduction. It's like telling something important about themselves or their work.
+
+For your essay, you can add one more move to make it even better! Think of adding how you feel about studying English, or why Gizan is a nice place to live. That would be like the C2 example’s ""Self_Introduction"" at the beginning and then ""Information_Reporting"".
+
+So next time when you write, try starting with something fun about yourself or your city, and then tell people important things like what school you're studying in. Your essay will sound more interesting that way!",1,0.0216,0.0
+811671,Opinion_Evaluation → Opinion_Evaluation → Opinion_Evaluation → Social_Closing,Opinion_Evaluation → Opinion_Evaluation → Opinion_Evaluation → Social_Closing,0,[],"Your essay about the pasta restaurant is a good start! Right now, you're using three opinion-evaluation moves to talk about different parts of the restaurant. That's great because it makes your message clear.
+
+The C2 example uses just two of these opinion moves with one social closing at the end. It’s like if you told someone ""I love that pasta place"" and then explained a bit more, before saying goodbye. Your style is simpler now since you're not explaining as much about each part of the restaurant.
+
+To make it even better, let's add one more opinion move right after your first two. After talking about the different foods they have, why don't we say something like ""The desserts are also yummy and cheap""? Then finish with your good-bye. This way, you’ll use all three moves: giving an opinion twice and then saying goodbye.
+
+Try this new structure in your next essay, it'll make your message flow better! Keep writing, you're doing a great job already.",1,0.0361,1.0
+375555,Social_Opening → Self_Introduction → Self_Introduction → Self_Introduction → Social_Closing,Self_Introduction → Daily_Routine → Social_Closing,3,['Daily_Routine'],"Hi Carlos,
+
+Great job with your introduction! You're doing well by introducing yourself and saying nice to meet you at the beginning. But let's make it a bit more interesting!
+
+Right now, you keep repeating the same idea over and over in different ways. It’s like eating the same flavor of ice cream all day - not very exciting for your listener. In the advanced example essay, they told us about their daily routine too. That adds another layer to what they're saying.
+
+I think it would be fun if you could add a bit more by talking about something interesting from where you come from or one thing you like doing besides introducing yourself. Maybe talk about a hobby or a place you love visiting? This way, you give the reader even more reasons to say ""nice to meet you"" and stay interested.
+
+So try adding one new idea next time!",1,0.0329,-0.3333
+387549,Social_Opening → Self_Introduction → Social_Closing → Social_Closing,Social_Opening → Social_Closing → Social_Closing → Social_Closing,1,[],"Hi Diogo,
+
+Great job with your essay! You're using a nice pattern: you start by introducing yourself, then say something about why you want to learn English. It ends with ""Goodbye!"" which is great for saying goodbye politely.
+
+Right now, your structure uses four parts - starting and ending the same way twice. This makes it feel a bit repetitive. The C2 example we looked at has more variety by changing some parts around and adding a new piece in the middle to give advice.
+
+To make your essay sound even better, you could add one more part to give more reasons why learning English is good. Then, instead of ending twice, you can end with ""Have a nice day!"" This way, it feels like you're wrapping up nicely without repeating yourself too much.
+
+Good job on starting and finishing well though! Keep writing like this.",1,0.0274,0.0
+778978,Social_Opening → Opinion_Evaluation → Social_Closing → Social_Closing,Social_Opening → Social_Closing → Social_Closing → Social_Closing,1,[],"Hi there! Your essay is a bit short right now. The C2 example has four closing sentences at the end, which makes it sound more complete. Right now you only have one close sentence. I think adding another close sentence would make your essay feel finished.
+
+Here's what you could do: 
+Social_Opening → Opinion_Evaluation → Social_Closing
+and then add another Social_Closing to finish up like the C2 example does.
+
+So it would look like this:
+Social_Opening
+I hope you enjoy your dinner. I prepared some yummy food for you.
+Opinion_Evaluation
+Dinner sounds delicious! 
+Social_Closing
+Have a nice dinner.
+Another Social_Closing
+See you soon!
+
+This way, your essay has the same feel as the C2 example and feels more finished. Keep up the good work!",1,0.0403,0.0
+80521,Social_Closing → Opinion_Evaluation → Opinion_Evaluation → Social_Closing → Social_Closing,Social_Closing → Social_Closing → Opinion_Evaluation → Opinion_Evaluation → Information_Reporting → Social_Closing,2,['Information_Reporting'],"Hi there! Your essay is a bit short and not very clear. Right now you're closing with ""see you later"" twice which isn't very good. Let's fix that by adding another move to make it better.
+
+In the advanced example, they do something nice at the start (thank you for inviting), then talk about when they can meet again. They also share their plans after dinner. We could add a line like ""I'm looking forward to meeting later"" to show you're excited and polite. 
+
+So instead of just closing twice, let's put in one more move: ""Thank you for the menu. I'm looking forward to seeing you soon."" This way your essay will have different parts that help explain things better. Keep practicing and you'll get even better!",0,0.0234,0.0
+872413,Opinion_Evaluation → Social_Closing → Opinion_Evaluation → Opinion_Evaluation → Opinion_Evaluation,Opinion_Evaluation → Social_Closing → Opinion_Evaluation → Opinion_Evaluation → Opinion_Evaluation,0,[],"Great job on your essay! Right now, you're using a pattern where you talk about one thing three times. That's good for practicing. The advanced example has a different pattern - they talked about something, then said how it was fun, and finally, told others to play too. 
+
+In your essay, try adding another opinion about the restaurant after telling us what foods are served there. For example, you could say ""The restaurant is very tasty."" This way, each time you talk about something different or give a new piece of information, it feels like a new idea and makes your writing flow better.
+
+Keep practicing this pattern!",1,0.0185,1.0
+471252,Self_Introduction → Self_Introduction → Self_Introduction → Social_Opening → Narrative_Experience,Narrative_Experience → Narrative_Experience,4,[],"Sure! Let's look at your essay structure together.
+
+Your current structure is:
+Self_Introduction → Self_Introduction → Self_Introduction → Social_Opening → Narrative_Experience
+
+Now, let’s compare this to the advanced example which has a different structure:
+
+Advanced Example: 
+Narrative_Experience → Narrative_Experience
+
+What you're missing in your structure is having more than one Narrative_Experience move. The advanced example shows that you can have multiple experiences, while yours just has one.
+
+To improve, you could add another experience or detail about something interesting that happened after you were born. For example:
+Self_Introduction → Self_Introduction → Self_Introduction
+Narrative_Experience 1 (about your street and colony)
+Narrative_Experience 2 (an exciting adventure)
+
+Try adding a new Narrative_Experience to show more about your life story!",1,0.0259,0.0
