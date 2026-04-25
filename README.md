@@ -167,22 +167,6 @@ Steps 7 and 8 require **Ollama** running locally with the `qwen2.5:3b` model:
 
 ---
 
-## Citation
-
-This work is currently under review. Citation will be updated upon publication.
-
-```bibtex
-@misc{ju2025discourse,
-  title  = {Discourse Move Structures in ESL Learner Writing:
-             A Knowledge Graph and RAG-Based Approach to Structural Feedback},
-  author = {Ju, Hanyu},
-  year   = {2025},
-  note   = {Manuscript in preparation}
-}
-```
-
----
-
 ## License
 
 This project is licensed under the MIT License.
