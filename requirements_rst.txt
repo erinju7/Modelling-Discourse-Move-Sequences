@@ -1,6 +1,0 @@
-git+https://github.com/iinemo/isanlp.git
-isanlp_rst
-pandas
-scipy
-seaborn
-matplotlib
