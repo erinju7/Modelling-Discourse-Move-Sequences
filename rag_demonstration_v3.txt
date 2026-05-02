@@ -1,0 +1,50 @@
+======================================================================
+STEP 1 — SELECTED A1 ESSAY
+======================================================================
+Writing ID   : 119725
+Move sequence: ['Social_Opening', 'Self_Introduction', 'Self_Introduction', 'Self_Introduction', 'Opinion_Evaluation', 'Social_Closing', 'Social_Closing']
+Sequence len : 7
+
+Essay text:
+Hi ! My name's Enrico. I'm from Cremona, Italy. I'm thirty-two years old. I like go motorcycle. How are you ? Nice to meet you ! Goodbye. Enrico.
+
+======================================================================
+STEP 3 — TOP 3 RETRIEVED C2 ESSAYS
+======================================================================
+
+A1 query sequence: Social_Opening|Self_Introduction|Self_Introduction|Self_Introduction|Opinion_Evaluation|Social_Closing|Social_Closing
+
+── Rank 1  (writing_id=44747, edit_distance=4) ──
+Move sequence: Social_Opening|Social_Closing|Daily_Routine|Social_Closing|Opinion_Evaluation|Opinion_Evaluation|Social_Closing
+Essay text:
+Hi! Sorry but I'll be busy allday at Tuesday ... but how about Friday at 1pm? My lunch break will be at 1pm to 2pm! Will be great to see you again! I will love it! Can I confirm with you tomorrow? Do you make the reserves at Restaurant? Thanks to invite me! Kisses
+
+── Rank 2  (writing_id=339446, edit_distance=4) ──
+Move sequence: Social_Opening|Social_Closing|Social_Closing|Social_Closing
+Essay text:
+Hi, Polaris I'm glad you wrote me. I'm worried about you. I have some advice for you. Here are my sugestions to help you fight your shopping addiction: Firstly, you should leave your hose without money. Secondly, you shouldn't come close to any story. Finally, try to spend you time with something else like any hobby of yours. I hope my sugestions can help you. Take care! Aila
+
+── Rank 3  (writing_id=603197, edit_distance=4) ──
+Move sequence: Information_Reporting|Information_Reporting|Opinion_Evaluation|Social_Closing|Social_Closing
+Essay text:
+To: xxx@unid.com From: xxx@unid.com subjectCSubject: Brasilia Networking event Hi Carl, I just returned yesterday from a successful networking event in Brasilia. There were hundreds of public workers at quot;Palacio do Planaltoquot; sharing contacts and ideas for new plainnningSPplanning. I think that the minister was so excited about my ideas about indicators. Maybe he'llWChe can help me! I guess that he liked my ideas. I'll tell you more next week.
+
+======================================================================
+STEP 4 — GENERATED FEEDBACK (qwen2.5:3b)
+======================================================================
+
+A1 essay move sequence : Social_Opening → Self_Introduction → Self_Introduction → Self_Introduction → Opinion_Evaluation → Social_Closing → Social_Closing
+C2 essay move sequence : Social_Opening → Social_Closing → Daily_Routine → Social_Closing → Opinion_Evaluation → Opinion_Evaluation → Social_Closing
+Edit distance          : 4
+
+Hi Enrico,
+
+Great job organizing your essay! It's like a fun dance, but right now you're just repeating yourself many times. The C2 example does something different - it has more changes in its steps.
+
+Right now, your dance is missing one important step called "Opinion Evaluation". This step helps people talk about what they think or feel. So I suggest adding this step to make your dance even more interesting and full of moves!
+
+Try writing how you like motorcycles. That's a fun thing to say! Put that opinion at the end, after introducing yourself.
+
+Remember, making changes is part of learning to dance better! Keep it up and enjoy your writing journey.
+
+Happy dancing!
