@@ -3,9 +3,9 @@
 
 ## Overview
 
-This repository contains the code and analysis pipeline for a dissertation
-project on discourse move structure in ESL learner writing using the
-EFCAMDAT corpus.
+This repository contains the code, analysis scripts, and selected outputs
+for a course project on discourse move structure in ESL learner writing
+using the EFCAMDAT corpus.
 
 The project has two main components:
 
@@ -23,9 +23,21 @@ The project has two main components:
      structural retrieval key
    - task-aware evaluation with Claude Sonnet
 
-The repository now reflects the **final dissertation pipeline**, including
-the revised contrastive RAG prompt, task-aware evaluation, error analysis,
-and sequence-level feature analysis.
+The repository reflects the **final project pipeline**, including the
+revised contrastive RAG prompt, task-aware evaluation, qualitative error
+analysis, and sequence-level feature analysis.
+
+---
+
+## At a Glance
+
+- **Corpus:** EFCAMDAT
+- **Levels covered:** A1-C2
+- **RQ1 output:** 8 discourse move categories from 44 non-noise clusters
+- **RQ2 setup:** zero-shot vs one-shot vs retrieval-augmented feedback
+- **Evaluation set:** 30 held-out A1 essays
+- **Judge model:** Claude Sonnet (task-aware evaluation)
+- **Generation model:** Qwen2.5-7B via Ollama
 
 ---
 
@@ -75,17 +87,15 @@ and sequence-level feature analysis.
 │   └── visualise_umap.py
 ├── figs/
 ├── csv/
-├── outputs/
 ├── README.md
 └── requirements.txt
 ```
 
 ---
 
-## Main Data Files
+## Key Outputs
 
-These files are generated during the pipeline and are used in the final
-analysis:
+The most important final outputs are:
 
 - `clustering_meta.csv` - sentence-level metadata with cluster assignments
 - `clustering_labelled.csv` - sentence-level discourse move labels
@@ -98,8 +108,8 @@ analysis:
 - `csv/error_analysis_tasktopic.csv` - manually coded error analysis for weaker RAG cases
 - `csv/sequence_features_summary.csv` - CEFR-level sequence feature summary
 
-Final tracked figures are stored in `figs/`, and final tracked result tables
-are stored in `csv/`.
+Tracked figures are stored in `figs/`, and tracked result tables are stored
+in `csv/`.
 
 Because `*.csv` is ignored by default in `.gitignore`, several final result
 files are explicitly tracked in this repository.
@@ -121,6 +131,10 @@ the model used in the final pipeline:
 ```bash
 ollama pull qwen2.5:7b
 ```
+
+If you only want to inspect the final outputs, you do not need to rerun the
+full pipeline; the main result figures and CSV summaries are already tracked
+in the repository.
 
 ---
 
@@ -199,7 +213,9 @@ The final RQ2 evaluation compares three conditions:
 
 ---
 
-## Final RQ1 Summary
+## Final Results
+
+### RQ1 Summary
 
 - HDBSCAN produced **44 non-noise clusters**
 - **569 / 3275 sentences (17.4%)** were assigned to noise and labelled as
@@ -231,9 +247,7 @@ Sequence-level feature summary:
 These patterns should be interpreted cautiously, since EFCAMDAT prompts vary
 across CEFR levels and therefore reflect both proficiency and task design.
 
----
-
-## Final RQ2 Summary
+### RQ2 Summary
 
 Task-aware Claude evaluation on 30 held-out A1 essays:
 
@@ -274,22 +288,8 @@ is informative but fragile.
 - The final repository contains both scripts and selected generated outputs.
 - Some exploratory scripts and older intermediate artifacts remain for
   transparency.
-- The dissertation write-up should use the current final result files listed
-  above as the canonical source for reported numbers.
-
----
-
-## Citation
-
-```bibtex
-@misc{ju2026discourse,
-  title  = {Discourse Move Structures in ESL Learner Writing:
-             Structural Pattern Analysis and Feedback Generation with Discourse Moves},
-  author = {Ju, Hanyu},
-  year   = {2026},
-  note   = {Dissertation project}
-}
-```
+- The report should use the current final result files listed above as the
+  canonical source for reported numbers.
 
 ---
 
