@@ -1,0 +1,4 @@
+Judge,Dimension,RAG,_mean_RAG,Zero-shot Baseline,_mean_Baseline,One-shot,_mean_One-shot
+Claude Sonnet task-topic,Specificity,3.07 ± 0.37,3.073333333333333,3.01 ± 0.45,3.013333333333333,3.53 ± 0.59,3.5266666666666664
+Claude Sonnet task-topic,Helpfulness,2.79 ± 0.44,2.7933333333333334,3.03 ± 0.59,3.033333333333333,3.16 ± 0.69,3.1599999999999997
+Claude Sonnet task-topic,Validity,2.56 ± 0.52,2.5600000000000005,2.91 ± 0.42,2.913333333333333,3.27 ± 0.75,3.2666666666666666

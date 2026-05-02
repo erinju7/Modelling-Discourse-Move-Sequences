@@ -1,0 +1,432 @@
+writing_id,topic_id,task_topic,task_type,essay_text,move_sequence,c2_writing_id,c2_topic_id,c2_task_topic,c2_sequence,c2_structural_summary,edit_distance,feedback_rag,feedback_baseline,feedback_oneshot
+246,6,Signing up for a dating website,narrative,Name: Joel Faquinha Age: 23 Hair Color: Blond Eye Color: Green Describe yourself: I'm short and slim. I have a beautiful smile and short hair. I'm young and happy! I love my life and my friends.,Physical_Description -> Physical_Description -> Opinion_Evaluation -> Opinion_Evaluation,132225,44,Writing a resume,Information_Reporting -> Physical_Description -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Information_Reporting, Physical_Description, Social_Closing. It begins with Information_Reporting and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You describe yourself twice and then give your opinions.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers usually introduce themselves first with a physical description before sharing their opinions.
+
+ONE THING TO TRY:
+Start by describing your appearance, like ""I'm short and slim with blond hair and green eyes."" This helps set the scene for readers.","Great job, Joel! Your writing is clear and easy to understand. Here’s a suggestion to make it even better:
+
+1. Start with introducing yourself: ""My name is Joel Faquinha, I am 23 years old.""
+2. Add where you live or any special details about your life.
+3. Talk about what you like: ""I love spending time with my friends and enjoying life!""
+4. End by saying why you want to sign up for a dating website: ""I want to meet new people who share similar interests.""
+
+Remember, it's okay to be simple! Keep going, you're doing great!","Great job telling us about yourself! You share your name and age first, then describe what you look like. This is clear and easy to follow. One idea is to add a bit more about your interests or what you're looking for in a partner. Otherwise, well done! Keep it simple and positive."
+270,1,Introducing yourself by email,narrative,Hello! I'm fine thanks.How are you? My name's Marcelo. I'm 20 years old. bye!,Social_Opening -> Social_Closing -> Self_Introduction -> Self_Introduction -> Social_Closing,988368,44,Writing a resume,Social_Opening -> Information_Reporting -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Social_Opening, Information_Reporting, Social_Closing. It begins with Social_Opening and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You start with a social opening, then introduce yourself twice and end with a social closing.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers might include more information about themselves without repeating the introduction.
+
+ONE THING TO TRY:
+Try adding one or two sentences about your interests or what you like to do. This will make your email more interesting and longer, which is good for A1 level writing. This would be an ""Information_Reporting"" move.","Great job starting your email! You did a good job saying hello and asking how someone is. It’s nice to see you introduced yourself by name and age too. Just remember to keep it organized with clear moves: start, middle, end. Maybe add one more sentence at the end, like ""Looking forward to hearing from you!"" That way, your email feels complete. Keep practicing!","Great start! You've introduced yourself and mentioned how you are doing. It's good to include a question at the end to show interest in the other person. Next time, try adding more about yourself by including where you're from or what you like to do. Keep it simple and friendly!"
+380,8,Making a dinner party menu,descriptive,"Hi! This is the menu: The Stater is cheese and vegetables. Main Course is rice in chicken ans rice in meat. Dessert is vanilha ice cream or vanilha cake. Drinks have water, beer and delicious juice. Bye Andreza",Social_Opening -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,62889,48,Rescheduling an appointment,Social_Closing -> Social_Closing -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,"The sequence contains 7 moves. It uses these move types: Social_Closing, Opinion_Evaluation. Repeated runs: Social_Closing x2, Opinion_Evaluation x4. It begins with Social_Closing and ends with Social_Closing.",2,"YOUR CURRENT STRUCTURE:
+You start with a greeting and then list your menu items without any closing remarks.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often close their writing to show they are finished. The C2 sequence ends with Social_Closing twice, which helps clarify the end of the text.
+
+ONE THING TO TRY:
+Add a sentence at the end saying ""See you soon, Andreza"" or something similar to close your menu list properly. This is a Social_Closing move that shows you are done.","Hi! Great job making a menu!
+
+Your essay is like a list of dishes. It tells us what to eat at dinner time. Here's a small suggestion to make it easier to read: 
+
+You could start by saying ""This is the menu:"". Then, you can write:
+
+- Starter: cheese and vegetables
+- Main course: chicken rice and meat rice
+- Dessert: vanilla ice cream or vanilla cake
+- Drinks: water, beer, and delicious juice
+
+Keep up the good work!","Great job organizing your menu into different parts! You have starters, main courses, desserts, and drinks. To make it even clearer, you could add short sentences to introduce each section, like ""Let's start with some tasty starters..."" or ""For the main course, we'll have..."". Keep up the good work!"
+694,3,Writing an online profile,narrative,"Hello! My name's Ronaldo Ruy. I'm twenty-nine years old. I'm from Rio de Janeiro, in Brazil, but nowadays I live in Ceara. Nice to meet you. Good bye! Ronaldo",Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing -> Social_Closing,1071769,44,Writing a resume,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Opening x2, Social_Closing x2. It begins with Social_Opening and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You start with a social opening, then keep introducing yourself multiple times. You end with two social closings.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers use fewer self-introductions and more variety in their moves.
+
+ONE THING TO TRY:
+Try adding one more sentence about your interests or hobbies to make it more interesting. This is a Social_Opening move that can engage the reader better.","Great job, Ronaldo! Your essay is clear and direct. To make it a bit better, you could add an introduction that tells us more about yourself. For example, you might say why you made this profile or what you hope to find on the internet. Then, you can mention your age and where you're from. Finally, end with a friendly greeting. This way, you give more information and make it easier for readers to connect with you. Keep up the good work!","Great job telling us your name and where you're from! You could add a little more about what you do now or your interests. This would make your profile more interesting. Think of it like adding a few fun facts at the end, like ""I love playing soccer!"" Keep up the good work, Ronaldo!"
+796,1,Introducing yourself by email,narrative,"Hi Anna! I'm fine, thanks. My name's Elias. I'm 34 years old. I'm from Brasil and i live in the city of Belo Horizonte with my dog and my wife Ana Beatriz. We don't have kids, but we are thinking about this. Regards, Elias Peixoto.",Social_Opening -> Social_Closing -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Other -> Social_Closing,988368,44,Writing a resume,Social_Opening -> Information_Reporting -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Social_Opening, Information_Reporting, Social_Closing. It begins with Social_Opening and ends with Social_Closing.",4,"YOUR CURRENT STRUCTURE:
+You start by greeting Anna and then introduce yourself a few times. You also mention your family plans at the end.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often report information clearly in one part of their text, which is missing here.
+
+ONE THING TO TRY:
+Try introducing yourself just once and add some details about where you work or what you like to do. This will make your email more organized and easier to read. You can use ""I live in Belo Horizonte and I work as a teacher.""","Great job starting with ""Hi Anna!"" and introducing yourself! Your essay has a good start. Here’s a small suggestion to make it even clearer: you could add a bit about why you are writing. Maybe say something like, ""How are you? I hope this email finds you well."" Then, after that, you can continue as before. Keep up the good work!","Great job, Elias! Your message is easy to understand. You start by saying hello and asking Anna how she is. Then you tell her your name and age. Next, you share where you live and who you live with. Finally, you end with a friendly note. This structure is clear and easy for Anna to follow. Keep it up!"
+1432,1,Introducing yourself by email,narrative,hello fine what is your name ? how old are you ? my name diego . i'm 23 years old. bye diego,Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Closing,988368,44,Writing a resume,Social_Opening -> Information_Reporting -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Social_Opening, Information_Reporting, Social_Closing. It begins with Social_Opening and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You start by asking a question, then introduce yourself twice, and end with a goodbye.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers usually report information rather than just asking questions or saying goodbye repeatedly.
+
+ONE THING TO TRY:
+Try to include more about yourself in your email. For example, you could say ""I am Diego, 23 years old, and I like playing soccer."" This is an Information_Reporting move.","Hello Diego! 
+
+Your email is a good start. You asked some questions and answered them too. Here's an idea to make it clearer:
+
+1. Start with ""Hello [name],""
+2. Introduce yourself: ""My name is Diego.""
+3. Ask about the other person: ""What's your name?""
+4. End nicely: ""Nice to meet you!""
+
+This helps organize your thoughts better and makes it easier for the reader to follow. Great job!","Great start! You've asked about names and ages nicely. Try combining those questions into one sentence like ""Hello, my name is Diego. I am 23 years old."" Then you can share more about yourself next. It's good to keep it simple but clear. Keep going!"
+1476,6,Signing up for a dating website,narrative,Name: Daniele SoaresAge: 23Hair Color: BlondEye Color: GreenDescribe yourself:I am tall and slim. I have long blond hair and green eyes. I have face thinWCa thin face. I am happy.,Physical_Description -> Physical_Description -> Physical_Description -> Opinion_Evaluation,132225,44,Writing a resume,Information_Reporting -> Physical_Description -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Information_Reporting, Physical_Description, Social_Closing. It begins with Information_Reporting and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You describe yourself three times and then share an opinion.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically start with a general introduction before describing themselves or sharing opinions.
+
+ONE THING TO TRY:
+Try starting your essay by saying what you want to do, like ""I am signing up for a dating website."" This is called Information_Reporting.","Great job, Daniele! Your essay has some good ideas. It's like telling a story about yourself. However, it could be easier to understand if you make a few changes. Try starting with one sentence that tells who you are and what you want to do. Then describe your appearance in one sentence, and end by saying how you feel. For example:
+
+""I am 23 years old and I'm signing up for a dating website. I have long blond hair and green eyes, and I'm tall and slim with a thin face. I am happy."" 
+
+This way, it's clearer what you're doing and why. Keep trying!","Great job telling us about yourself! You share your name and age first, then describe what you look like. It’s clear, but a little mixed up. Try grouping similar information together. For example, say ""I am tall and slim with long blond hair and green eyes."" Then, add ""I have a thin face."" This makes it easier to read! Keep up the good work, Daniele!"
+1479,8,Making a dinner party menu,descriptive,Hi! This is the menu: Main Course: cheese and vegetables. The starter is ice cream. The dessert is fruit. The drinks isAGare coke and water. Daniele,Social_Opening -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,62889,48,Rescheduling an appointment,Social_Closing -> Social_Closing -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,"The sequence contains 7 moves. It uses these move types: Social_Closing, Opinion_Evaluation. Repeated runs: Social_Closing x2, Opinion_Evaluation x4. It begins with Social_Closing and ends with Social_Closing.",2,"YOUR CURRENT STRUCTURE:
+You start with a greeting and then list your menu items one by one without any closing remarks.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often use a social opening to begin and a closing remark to end their writing, even in simple tasks like making a dinner party menu.
+
+ONE THING TO TRY:
+Try adding a polite closing at the end of your essay. For example: ""Thank you for reading my menu."" This is a Social_Closing move that will make your writing more complete and polite.","Hi Daniele!
+
+Great job making a dinner party menu! Here are some tips to make your writing easier to understand:
+
+1. Start with a greeting: You did this well!
+2. List each part of the meal clearly:
+   - Starter
+   - Main Course
+   - Dessert
+   - Drinks
+
+3. Add a comma after ""Dessert is fruit"" and ""Drinks are"":
+
+It's a good start! Keep practicing, and your writing will get better and clearer.","Great job organizing your menu into main course, starter, dessert, and drinks! Adding a short sentence at the beginning to introduce the menu would be helpful. For example: ""Here is my dinner party menu:"" This makes it clear what you're sharing. Keep up the good work!"
+1753,1,Introducing yourself by email,narrative,"Hello! Anna. I'm fine,thanks. My name's Angel. I'm Thirty-four. Bye! Angel.",Social_Opening -> Social_Closing -> Social_Closing -> Self_Introduction -> Self_Introduction -> Social_Closing -> Social_Closing,925415,44,Writing a resume,Information_Reporting -> Information_Reporting -> Social_Closing -> Opinion_Evaluation -> Social_Closing -> Social_Closing,"The sequence contains 6 moves. It uses these move types: Information_Reporting, Social_Closing, Opinion_Evaluation. Repeated runs: Information_Reporting x2, Social_Closing x2. It begins with Information_Reporting and ends with Social_Closing.",4,"YOUR CURRENT STRUCTURE:
+Your message starts with a greeting and then introduces yourself twice. You also include two closings.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically structure their messages more clearly by using different types of moves, like providing information or sharing opinions.
+
+ONE THING TO TRY:
+Add one sentence about your interests or hobbies after introducing yourself. This will help make your message more interesting and informative, which is a good way to share about yourself. This move type is called ""Information_Reporting.""","Great job starting with ""Hello!"" and introducing yourself! Here’s a small suggestion to make your email more organized:
+
+""Hello! My name is Angel. I am fine, thank you. I am thirty-four years old. Bye, Angel.""
+
+You did a good job saying hello at the beginning and goodbye at the end. Adding ""My name is"" makes it clearer who you are talking about. Keep up the good work!","Great job starting with a greeting! You're doing well by introducing yourself and stating how you are. It's good that you ended with your name again to show it’s you sending the email. Next time, try adding a bit more about yourself after saying you're fine, like where you live or what you do. This will make your introduction longer and more interesting! Keep up the good work!"
+1755,3,Writing an online profile,narrative,"Hi! My name's Angel. I'm thirty-four years old. I'm from Luoyang, in China. Nice to meet you,too. Bye!",Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing,988368,44,Writing a resume,Social_Opening -> Information_Reporting -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Social_Opening, Information_Reporting, Social_Closing. It begins with Social_Opening and ends with Social_Closing.",4,"YOUR CURRENT STRUCTURE:
+You start by greeting someone, introduce yourself three times, and then end with a goodbye.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically provide more information about themselves in a balanced way without repeating the same details multiple times.
+
+ONE THING TO TRY:
+Try adding one interesting fact about yourself after introducing your name. This will make your profile more engaging. For example, ""Hi! My name's Angel, and I love traveling. I'm thirty-four years old from Luoyang, China.""","Hi Angel! Great job introducing yourself and saying hello! Your essay has some good parts. Here’s a small suggestion to make it more organized:
+
+1. Start with a friendly greeting.
+2. Introduce yourself by name.
+3. Share where you're from.
+4. End with a polite closing.
+
+Your essay is like a short story. Adding these steps will help your readers understand better and enjoy reading about you! Keep up the good work!","Great start! You told us your name and age first. Then you said where you're from. That’s good! It's clear and easy to understand. Maybe next time, you could add a little more about yourself after saying goodbye. Like what you like or do in your free time. Keep up the good work!"
+1940,6,Signing up for a dating website,narrative,Name: Marco Migliorini Age: 31 Hair Color: Brown Eye Color: Brown-Green Describe yourself: I am tall and slim. I have a big mouth and a big nose. I have a normal size ears. I have long legs and big feet. I am happy.,Physical_Description -> Other -> Physical_Description -> Physical_Description -> Opinion_Evaluation,132225,44,Writing a resume,Information_Reporting -> Physical_Description -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Information_Reporting, Physical_Description, Social_Closing. It begins with Information_Reporting and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You describe yourself physically three times and then say you are happy.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically start with describing their physical appearance once, followed by an opinion or evaluation about themselves.
+
+ONE THING TO TRY:
+Start your description by mentioning your height and build just once, like ""I am tall and slim."" Then share your opinions or feelings afterward. This will help organize your thoughts better.","Great job, Marco! Your essay has some good points. Here’s a suggestion to make it clearer:
+
+1. Start by telling us about yourself in one sentence.
+2. Then, talk about what you look like.
+3. Finally, say how you feel.
+
+For example:
+""I am 31 years old and happy. I have brown hair, brown-green eyes, and am tall and slim. I also have a big mouth, a big nose, normal-sized ears, long legs, and big feet.""
+
+Keep it simple and straightforward!","Great job, Marco! You're doing well by telling us about yourself in a clear way. It's good that you included your name, age, and physical description. Next time, try grouping similar information together to make it easier to read. For example, put all the physical details like hair color, eye color, height, and weight in one place. Keep up the good work!"
+2064,1,Introducing yourself by email,narrative,"HI teacher, I'm Ricardo have 47 years old. I live in Rio de Janeiro and is a very nice place I single and live alone, don't have dog. In Rio is very hot but I like so much, so I hope do you like this. Thank's.",Self_Introduction -> Self_Introduction -> Information_Reporting -> Social_Closing,603194,41,Writing a movie plot,Information_Reporting -> Information_Reporting -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Information_Reporting, Social_Closing. Repeated runs: Information_Reporting x2. It begins with Information_Reporting and ends with Social_Closing.",2,"YOUR CURRENT STRUCTURE:
+You start by introducing yourself twice and then give some information about where you live and your personal details. You end with a social closing.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically report more information in one go rather than repeating the same move multiple times.
+
+ONE THING TO TRY:
+Try to combine your self-introduction into one sentence, like this: ""Hello teacher, my name is Ricardo and I am 47 years old."" This will make your email clearer and more concise.","Hi Ricardo,
+
+Great job introducing yourself! Here’s a little advice to make it even clearer:
+
+1. Start with ""Hello teacher, my name is Ricardo.""
+2. Add ""I am 47 years old."" next.
+3. Then say ""I live in Rio de Janeiro and I really like it there.""
+4. Next: ""It's very warm but that’s okay for me.""
+5. Finish with ""Thank you.""
+
+Keep up the good work!","Great job, Ricardo! You've introduced yourself clearly. It’s good that you mentioned your age, where you live, and how you feel about it. To make it even better, try grouping the information together like this:
+
+HI teacher,
+I'm Ricardo. I have 47 years old. I live in Rio de Janeiro, which is a very nice place. I am single and live alone, and don't have a dog. It's very hot there, but I like it so much. I hope you like it too.
+
+Keep up the good work!"
+2203,5,Updating your online profile,narrative,"Good evening ladies and gentlemen.IS To those of you who don't know me, my name is April Yang. I am glad to introductSPintroduce our company for you. Before I outline the sections of my presentaionSPpresentation, here is an interesting fact. Do you know that our many customers are the tier 1 branding companies in the world? So,IS with that in mind, my presentaionSPpresentation have 3 parts.IS Firstly, I'm going to introductSPintroduce our history.IS Then, I'm going to talk about our organizations and its products.IS Finally, I 'm going to talk about the benifitSPbenefit that our cooperation.IS Thank you very mcuhSPmuch.",Self_Introduction -> Other -> Other -> Information_Reporting -> Other,848513,45,Writing on the family blog,Information_Reporting,The sequence contains 1 moves. It uses these move types: Information_Reporting. It begins with Information_Reporting and ends with Information_Reporting.,1,"YOUR CURRENT STRUCTURE:
+Your essay starts with a self-introduction and then immediately shifts to providing information about your company. It lacks clear organization into distinct parts.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically use clearer transitions between different sections of their writing, making the structure more organized.
+
+ONE THING TO TRY:
+Try starting each part with a sentence like ""Firstly,"" or ""Secondly,"" to clearly show the order of your information. This is called an Information_Reporting move and will help organize your essay better.","Hi April! Your essay has a good start. You introduced yourself and mentioned your topic. However, it’s a bit confusing because you talked about introducing your company instead of updating your online profile. Try to focus on the parts of your profile. For example, you could start by saying something like: ""Hello everyone! My name is April Yang. I will show you how to update my online profile."" This will help make your essay clearer and more focused. Keep going though; you're doing great!","Great job! You've started with a clear introduction and outlined your presentation well. Your structure is easy to follow. Just one suggestion: you could group ""our company"" information together at the beginning for better organization. Keep up the good work!"
+2330,1,Introducing yourself by email,narrative,Hi! Fine thanks. How are you? My name's Cristina. I'm 26 years old. Bye! Cristina.,Social_Opening -> Social_Closing -> Social_Opening -> Self_Introduction -> Self_Introduction -> Social_Closing -> Social_Closing,1071769,44,Writing a resume,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Opening x2, Social_Closing x2. It begins with Social_Opening and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You start with a social opening, then introduce yourself, and end with two closings.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically have a more balanced structure without repetitive openings and closings.
+
+ONE THING TO TRY:
+Try adding one self-introduction move between your current ones. For example: ""Hi! Fine thanks. How are you? My name's Cristina, I'm 26 years old."" This will make your email more organized and clear.","Great start! Your email has three main parts. That's good! But it could be a bit more organized. Maybe add a little more about yourself, like where you live or what you do. Also, thank the person for asking how they are doing. Here’s an idea: 
+
+1. Greet and say hello.
+2. Ask how the other person is doing.
+3. Introduce yourself (name and age).
+4. Add one or two more details about yourself.
+5. Say goodbye.
+
+Keep up the good work!","Great start, Cristina! You've included important parts like saying hello, asking how the other person is doing, and mentioning your name and age. It’s good to keep it simple. Adding a little more detail about where you are from or what you do could make your email even better! Keep up the good work!"
+2389,6,Signing up for a dating website,narrative,"Name: Marco, Age: 37. Hair color brown. Eye Color brown. I'm not tall, but I'm not too short . I have a short brown hair and I 'm thin.",Self_Introduction -> Physical_Description -> Physical_Description -> Other -> Physical_Description,132225,44,Writing a resume,Information_Reporting -> Physical_Description -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Information_Reporting, Physical_Description, Social_Closing. It begins with Information_Reporting and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You start by introducing yourself and then describe your physical appearance three times.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically introduce themselves once and then move on to describing their physical characteristics just once.
+
+ONE THING TO TRY:
+Try writing a clear self-introduction at the beginning, followed by a single description of how you look. This will make your essay more organized and easier to read.","Great effort, Marco! Your essay has some good ideas. To make it clearer, you could try organizing your thoughts like this:
+
+1. Start by introducing yourself: ""I am Marco. I am 37 years old.""
+2. Talk about your appearance next: ""I have brown hair and eyes. I am not tall or short.""
+3. Describe your physical traits: ""My hair is short and brown, and I am thin.""
+
+This way, it's easier for the reader to understand what you are writing about. Keep up the good work!","Great job, Marco! You've introduced yourself clearly with your name and age first. It’s good that you mentioned your physical traits next. To make it even clearer, try grouping related information together. For example, put all the physical details like hair color and height in one sentence. Keep up the good work!"
+2417,3,Writing an online profile,narrative,"Hi! My name's Tiago. I'm twenty-eight years old. I'm from Copacabana, in Rio de Janeiro, in Brazil. I love Rio de Janeiro, Cristo Redentor and I like playing chess. Nice to meet you. Bye! Tiago",Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Narrative_Experience -> Social_Opening -> Social_Closing -> Social_Closing,1071769,44,Writing a resume,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Opening x2, Social_Closing x2. It begins with Social_Opening and ends with Social_Closing.",4,"YOUR CURRENT STRUCTURE:
+You start by greeting and introducing yourself twice, then mention your place of origin, love for Rio de Janeiro, and hobbies. You end with a friendly closing.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically open and close their profiles more clearly and use fewer repetitive introductions.
+
+ONE THING TO TRY:
+Try opening your profile just once at the beginning and closing it at the end. This will make your writing clearer and more focused. Use a Social_Opening move to start and a Social_Closing move to finish.","Great job, Tiago! Your essay is clear and easy to understand. Here’s a small suggestion: you could add an introduction that tells us something about yourself right away. For example, ""Hi everyone! My name is Tiago, and I’m 28 years old."" Then, you can introduce where you come from and what you like. This way, your profile starts with who you are, which is nice to read. Keep up the good work!","Great job, Tiago! You started with your name and age, which is good. Then you told us where you're from and what you like, but it would be nice to put the information about Rio de Janeiro and chess together in one sentence. This makes your profile easier to read. Keep up the good work!"
+2689,8,Making a dinner party menu,descriptive,"Hi! This is the menu: The starter is vegetables and soup. The main course is chicken or meat, rice and noodles. The drinks is coke and juice orange. The dessert is chocolate cake and ice cream. Ok! Bye bye",Social_Opening -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing -> Social_Closing,671146,46,Writing an email of advice,Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,"The sequence contains 7 moves. It uses these move types: Opinion_Evaluation, Social_Closing. Repeated runs: Opinion_Evaluation x6. It begins with Opinion_Evaluation and ends with Social_Closing.",2,"YOUR CURRENT STRUCTURE:
+You start by saying hello and introduce your menu. Then you list each dish one by one without much detail or evaluation.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often provide more evaluations or opinions on their choices, like why they picked certain dishes.
+
+ONE THING TO TRY:
+Add a sentence after each dish to say something about it, such as ""The chocolate cake is our specialty!"" This will help give your menu more detail and interest. You can use the Opinion_Evaluation move type for this.","Great job! You did a good job organizing your menu. Here are some tips to make it even clearer:
+
+1. Start with an introduction like ""This is our dinner party menu:""
+2. List the starter first, then main course, drinks, and dessert.
+3. Add a little description for each item if you want.
+
+Your structure is almost perfect! Keep up the good work!","Great job organizing your menu into different sections! You did a good job by adding ""The starter is"" and ""The main course is"" to separate your food choices. Adding a sentence at the end like ""I hope you enjoy my menu!"" would be a nice touch too. Keep up the good work!"
+2698,3,Writing an online profile,narrative,"Hi, My name's Caroline. I'm thirty-four years old. I'm from So Paulo, in Brazil. I like to cook. Nice to meet you. Bye",Self_Introduction -> Self_Introduction -> Self_Introduction -> Opinion_Evaluation -> Social_Opening -> Social_Closing,925415,44,Writing a resume,Information_Reporting -> Information_Reporting -> Social_Closing -> Opinion_Evaluation -> Social_Closing -> Social_Closing,"The sequence contains 6 moves. It uses these move types: Information_Reporting, Social_Closing, Opinion_Evaluation. Repeated runs: Information_Reporting x2, Social_Closing x2. It begins with Information_Reporting and ends with Social_Closing.",4,"YOUR CURRENT STRUCTURE:
+You start by introducing yourself twice and then say you like to cook. You end with a social closing.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often provide more information about themselves before ending the profile.
+
+ONE THING TO TRY:
+Try adding one or two sentences about your interests or hobbies after introducing yourself, like ""I enjoy traveling and meeting new people."" This will help give others a better idea of who you are.","Great job, Caroline! Your writing is clear and easy to understand. You started by introducing yourself and gave some important details like your age and where you're from. Adding a sentence about what you like to do (cooking) was also good. Just remember to include more information to make it longer and more interesting. Keep up the good work!","Great job! You have all the main parts of your profile. You started with introducing yourself, told us where you're from and what you like to do. It's clear and easy to understand. Maybe you could add a bit more about yourself or your interests to make it longer and more interesting. Keep up the good work!"
+2701,6,Signing up for a dating website,narrative,Name: Caroline M. Age: 34 Hair color: Blond Eye Color: Blue Describe yourself: I'm short and slim. I have short hair. I have long arms and big hands. I'm happy.,Physical_Description -> Physical_Description -> Physical_Description -> Opinion_Evaluation,132225,44,Writing a resume,Information_Reporting -> Physical_Description -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Information_Reporting, Physical_Description, Social_Closing. It begins with Information_Reporting and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You start by describing yourself physically three times and then say you are happy.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often mix descriptions with opinions or add some context about their goals or interests on the dating website.
+
+ONE THING TO TRY:
+Try adding a sentence about why you want to sign up for this website. For example, ""I'm looking for someone who shares my love for hiking and outdoor adventures."" This adds an opinion and gives more context about your intentions, making your writing clearer and more engaging.","Great job, Caroline! Your essay is clear. Here are some ideas to make it even better:
+
+1. Start with a small introduction about yourself.
+2. Talk about your height and body type.
+3. Describe your appearance next.
+4. End by saying how you feel.
+
+For example:
+""Hello, I'm 34 years old. I am short and slim. My hair is blonde and my eyes are blue. I have long arms and big hands. I'm very happy!""
+
+This helps organize your thoughts better and makes it easier to read. Keep up the good work!","Great job, Caroline! Your essay tells us about yourself in a clear way. You start by giving your name and age, which is good. Then you describe what you look like, which is also helpful. One suggestion is to add a sentence or two about your interests or what you're looking for in a partner. This will help others get to know you better! Keep it simple and positive."
+2797,1,Introducing yourself by email,narrative,"hi, y'm fine, thanks. my name's Alcione. Y'm 35 years old. nice to meet you Anna. by. Alcione",Social_Opening -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing -> Social_Closing,1071769,44,Writing a resume,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Opening x2, Social_Closing x2. It begins with Social_Opening and ends with Social_Closing.",2,"YOUR CURRENT STRUCTURE:
+Your email starts with a social opening, then introduces yourself twice, followed by another social opening and closing.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often structure their emails more clearly without unnecessary repetitions.
+
+ONE THING TO TRY:
+Try introducing yourself just once. This makes your message clearer and more concise. Explicitly state who you are at the beginning and then move to the main part of your email.","Great start! Your email is short but clear. It's good that you introduced yourself and mentioned your age. Next time, try adding a bit more about where you're from or what you like to do. This can make the introduction feel more complete. Keep up the good work!","Great start! You're introducing yourself and mentioning Anna. That's good. Next time, try adding a bit more about yourself, like where you're from or what you do. It helps the reader get to know you better. Keep it friendly, just like your first sentence!"
+2834,1,Introducing yourself by email,narrative,"Hello Anna, I'm fine. My name's Andr. I'm 34 years old. Bye! Andr",Social_Opening -> Self_Introduction -> Self_Introduction -> Social_Closing -> Social_Closing,1071769,44,Writing a resume,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Opening x2, Social_Closing x2. It begins with Social_Opening and ends with Social_Closing.",2,"YOUR CURRENT STRUCTURE:
+You start by saying hello and opening the conversation, then introduce yourself twice, and end with a closing statement.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically use more varied openers and closers in their emails.
+
+ONE THING TO TRY:
+Try adding a simple reason for your email after the social opener. This can be as simple as ""I hope this message finds you well!"" It's a good way to transition into your introduction.","Great job starting with ""Hello Anna""! This is a good way to begin. However, your email could have more steps. Think of it like building a small house—start with a door (greeting), then add walls (introduction and details), and finally, end with a roof (closing). You started well but didn't build the walls yet. Next time, try adding some information about yourself after saying your name and age. For example, you could mention where you live or what you like to do. Great effort! Keep going!","Great job starting with a greeting and mentioning how you are! It’s nice to hear that you’re fine. Your next step is perfect too—introducing yourself by name. 
+
+Just one suggestion: You could add more about yourself after your age, like where you're from or what you do. Then end with a friendly closing. This will make your email longer and more interesting!
+
+Keep up the good work!"
+2861,5,Updating your online profile,narrative,"My name's Chenwq. I'm thirty-four. I'm from China. I live in Dongguan,in China. I'm a teather. I work in a school. I like my job.",Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Other -> Information_Reporting -> Information_Reporting,781303,44,Writing a resume,Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting,The sequence contains 6 moves. It uses these move types: Information_Reporting. Repeated runs: Information_Reporting x6. It begins with Information_Reporting and ends with Information_Reporting.,4,"YOUR CURRENT STRUCTURE:
+You keep repeating your self-introduction and tell us about yourself over and over.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers usually introduce themselves once and then move on to the main topic without repetition.
+
+ONE THING TO TRY:
+Try introducing yourself only once, like at the beginning. Then focus on updating your online profile by adding interesting information about your job or hobbies. This will make your writing more varied and engaging.","Great job, Chenwq! You've started your essay by introducing yourself. This is a good beginning. However, to make it clearer and more organized, you could add a small transition like ""Now, let me tell you about my online profile."" Also, consider adding information about the sections of your online profile that you plan to update. Keep up the good work!","Great job telling us about yourself! You start with your name and age, then where you're from. Then you tell us about your job and where you work. This is easy to follow. Next time, try grouping the information about your job together at the end to make it look more organized. Keep up the good work!"
+2878,6,Signing up for a dating website,narrative,Name: YaQin Age: 26 Hair Color: balck Eye Color: balck Describe yourself: I am short and fat. I have small balck eyes and long balck hair. I have smally mouth and smally nose. I am happy.,Physical_Description -> Physical_Description -> Physical_Description -> Opinion_Evaluation,132225,44,Writing a resume,Information_Reporting -> Physical_Description -> Social_Closing,"The sequence contains 3 moves. It uses these move types: Information_Reporting, Physical_Description, Social_Closing. It begins with Information_Reporting and ends with Social_Closing.",3,"YOUR CURRENT STRUCTURE:
+You describe yourself three times and then say you are happy.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically start with providing information about themselves before closing the essay, unlike your repeated physical descriptions.
+
+ONE THING TO TRY:
+Start by describing one aspect of yourself, like your age or interests. This follows a more common structure and helps focus on who you are. Use ""Information_Reporting"" to begin.","Hi YaQin! Your writing is getting better every day. Here are some ideas to make your essay easier to understand:
+
+1. Start with an introduction: You could say something like, ""I am 26 years old and I have black hair and eyes.""
+
+2. Talk about your physical appearance next: For example, you can mention, ""I am short and a bit fat.""
+
+3. Describe your features: Say something like, ""I have small black eyes, long black hair, a small mouth, and a small nose.""
+
+4. Finish with how you feel: You already wrote this part well! Just add it at the end: ""I am happy!""
+
+This way, your essay has a clear beginning, middle, and end. Keep up the good work!","Great job! You're telling us about yourself in a clear way. It’s good that you included your name, age, and physical description. Next time, you could add more details about what you like or are interested in. This will help people get to know you better. Keep up the good work!"
+2916,3,Writing an online profile,narrative,"Hi! My name's Cindy. I from Qingdao,China and I live in Qingdao,China. I'm their-two years old. I like listen to the music and read the story in home. Nice to meet you! Goodbye!",Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Opinion_Evaluation -> Social_Opening -> Social_Closing,925415,44,Writing a resume,Information_Reporting -> Information_Reporting -> Social_Closing -> Opinion_Evaluation -> Social_Closing -> Social_Closing,"The sequence contains 6 moves. It uses these move types: Information_Reporting, Social_Closing, Opinion_Evaluation. Repeated runs: Information_Reporting x2, Social_Closing x2. It begins with Information_Reporting and ends with Social_Closing.",5,"YOUR CURRENT STRUCTURE:
+You start by introducing yourself twice and then talk about your hobbies. You end with a friendly greeting.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically include more information in a structured way without repeating themselves as much.
+
+ONE THING TO TRY:
+Try to introduce yourself once and then describe what you like to do. This will make your profile clearer and easier to read. Use ""Information_Reporting"" for introducing yourself and describing your hobbies.","Great job starting with a greeting! Your essay has some good ideas. Here’s how you could organize it better:
+
+1. Introduce yourself: Start by saying your name and where you're from.
+2. Tell us more: Mention where you live now and your age.
+3. Share what you like to do: Describe the activities you enjoy.
+
+Your essay is short but covers most of these points. Just remember to use complete sentences for better clarity. Keep up the good work!","Great job telling us about yourself! You have all the important information. It’s nice to see you start with your name and where you’re from. The next time, try putting your age after saying ""I'm"" like this: ""I'm two years old."" Also, you can group the activities you like doing together at the end. Keep up the good work!"
+2985,1,Introducing yourself by email,narrative,"Hi Anna: I'm fine, thanks! How are you? My name's Jack. I'm twentytwo. Bye Jack",Social_Opening -> Social_Opening -> Self_Introduction -> Self_Introduction -> Social_Closing,1071769,44,Writing a resume,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Opening x2, Social_Closing x2. It begins with Social_Opening and ends with Social_Closing.",2,"YOUR CURRENT STRUCTURE:
+You start by saying hello and asking how the other person is. Then you introduce yourself twice and say goodbye.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically close their email with a social closing after starting with two social openings, rather than having an extra self-introduction in between.
+
+ONE THING TO TRY:
+Try saying ""Bye"" once at the end of your message. This will make your email structure clearer and more natural. Use Social_Closing to conclude your message.","Hi Jack! Great job starting your email with ""Hi Anna"" and asking how she is. It's good to see you're friendly!
+
+Your essay has a few moves but could use more structure. Think of it like building blocks: you start by greeting, then introduce yourself, and finish nicely.
+
+Here’s an idea:
+1. Start with “Hi Anna,”
+2. Ask, ""How are you?""
+3. Introduce yourself: “My name is Jack. I am 22 years old.”
+4. Add a friendly closing like ""Bye for now!""
+
+Keep it simple, and you'll do great!","Great start! You’ve introduced yourself and asked how Anna is doing. That’s a good way to begin. Next time, you could add more details about yourself after that, like where you're from or what you do. It's okay if it’s just a short introduction though—keep up the good conversation starter!"
+3323,5,Updating your online profile,narrative,"My name is Selina Zhao. I 'm twenty-five. I'm from in China. I live in Guangdong, China. I'm a secretary. I work in an office. I don't like my job.",Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Information_Reporting -> Information_Reporting -> Information_Reporting,781303,44,Writing a resume,Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting,The sequence contains 6 moves. It uses these move types: Information_Reporting. Repeated runs: Information_Reporting x6. It begins with Information_Reporting and ends with Information_Reporting.,4,"YOUR CURRENT STRUCTURE:
+You start by introducing yourself four times and then provide three pieces of information about your job.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically vary their introduction to keep the text more engaging. They might combine information reporting with other types of moves, like adding a personal touch or a goal statement.
+
+ONE THING TO TRY:
+Add one sentence at the end expressing why you want to update your online profile. This can be an Information_Reporting move that adds context to your writing.","Great job starting your essay with who you are! Your next step could be to make a small change. Try saying ""I am Selina Zhao."" instead of ""My name is Selina Zhao.""
+
+Next, you can make it clear that the information comes from yourself by adding ""I am"" before each piece of information. This helps organize your thoughts better.
+
+For example:
+""I am Selina Zhao. I am 25 years old. I am from China. I live in Guangdong, China. I am a secretary. I work in an office.""
+
+This makes it easier for the reader to understand and follow along!","Great job, Selina! Your profile is clear and easy to understand. You start by telling us your name and age, which is good. Then you share where you're from and live, followed by your job information. This order works well. To make it even better, you could consider grouping the information about your workplace together at the end. Keep up the good work!"
+3346,3,Writing an online profile,narrative,"Hi teacher! How are you? This is my profile: My name's Fbio. I'm twenty-seven years old. I'm from So Paulo, in Brazil. Nice to meet you. Bye!",Social_Opening -> Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing,1071769,44,Writing a resume,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Opening x2, Social_Closing x2. It begins with Social_Opening and ends with Social_Closing.",4,"YOUR CURRENT STRUCTURE:
+You start with a social opening twice and end with a goodbye. You introduce yourself three times.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically have a clearer beginning and ending without repeating themselves too much.
+
+ONE THING TO TRY:
+Try starting once, say your name and age, then add details about where you're from. End by saying nice to meet you. This helps keep the profile clear and friendly.","Hi Fbio! Great job starting your profile! Your essay is short and clear. Here’s a suggestion to make it a bit more organized:
+
+1. Start with a greeting: Hi everyone!
+2. Introduce yourself: My name is Fbio.
+3. Share your age: I'm 27 years old.
+4. Tell where you're from: I come from São Paulo, in Brazil.
+
+Adding these steps will help organize your profile better. Keep up the good work!","Great job! You've included all the necessary information in your profile. It's nice to see you start with a friendly greeting and then introduce yourself clearly. Next time, you could try grouping your personal details together first, like your name and age, followed by where you're from. This makes it easier for readers to understand your profile. Keep up the good work!"
+3347,4,Describing your family in an email,descriptive,"Hello Maria, how are you? My name's Fabio. There are four people in my family. All of us live in So Paulo, Brazil. My mother is fifty-six and my father is fifty-two. My sister is thirty.Nice to meet you.",Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction,339446,46,Writing an email of advice,Social_Opening -> Social_Closing -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Closing x3. It begins with Social_Opening and ends with Social_Closing.",5,"YOUR CURRENT STRUCTURE:
+You start by saying hello and introduce yourself multiple times. Then you talk about your family.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically close their emails with polite phrases at the end.
+
+ONE THING TO TRY:
+Add a closing line like ""It was nice meeting you, Maria."" This will complete your email properly. This is called a Social_Closing move.","Great job starting with a friendly greeting and introducing yourself! Your essay has a good start. Here are some suggestions to help organize your ideas better:
+
+1. Start by telling Maria how nice it is to meet her.
+2. Introduce yourself clearly.
+3. Say that you want to talk about your family.
+4. Mention the number of people in your family and where they live.
+5. Tell us about each person in your family.
+
+Your essay will flow better if you follow these steps. Keep up the good work!","Great job! You started with a friendly greeting and told Maria your name. Then you said how many people are in your family and where they live. It’s good to mention each family member by name next time. Here’s one suggestion to make it even clearer:
+
+""Hello Maria,  
+How are you? My name's Fabio. There are four people in my family: my parents and my sister. We all live in São Paulo, Brazil. My mother is fifty-six, my father is fifty-two, and my sister is thirty. Nice to meet you!""
+
+This way, it’s easy for Maria to understand who everyone is. Keep up the good work!"
+3494,6,Signing up for a dating website,narrative,Name: Homely Costa Age: 31 Hair Color: Brown Eye Color: Brown Describe yourself: I'm beautiful and happy. I'm tall. I have beautiful mouth. I'm young and strong. I have small eyes. I'm employee of the government.,Physical_Description -> Physical_Description -> Opinion_Evaluation -> Self_Introduction -> Physical_Description -> Information_Reporting,1127204,45,Writing on the family blog,Opinion_Evaluation -> Information_Reporting,"The sequence contains 2 moves. It uses these move types: Opinion_Evaluation, Information_Reporting. It begins with Opinion_Evaluation and ends with Information_Reporting.",4,"YOUR CURRENT STRUCTURE:
+You start by describing your appearance twice, then give an opinion, introduce yourself, and finally state some information.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often begin with a clear statement about themselves before delving into details.
+
+ONE THING TO TRY:
+Start with one or two simple sentences to introduce yourself. For example: ""I am 31 years old and work for the government."" This helps set the stage for your description.","Hi Homely Costa!
+
+Your essay is a good start! Here’s some advice to make it clearer:
+
+1. Start with an introduction: ""I am 31 years old and I have brown hair and eyes.""
+2. Talk about yourself next: ""I am happy and strong. I work for the government.""
+3. End with your appearance: ""I am tall.""
+
+This order helps people understand you better. Keep up the good work!","Great job! You did a good job introducing yourself. To make it easier to read, try putting all your personal details together first, like this:
+
+Name: Homely Costa  
+Age: 31  
+Hair Color: Brown  
+Eye Color: Brown  
+
+Then describe yourself, for example:  
+I'm beautiful and happy. I'm tall with a beautiful mouth. I'm young and strong.
+
+This helps organize the information better! Keep up the good work!"
+3788,3,Writing an online profile,narrative,"Hi! My name's Marcelo Honorio. I'm twenty-eight years old. I'm from Capanema, in Brazil. But I live in Tucurui, in Brazil too. Nice to meet you too. See you in other time. Bye!",Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing -> Social_Closing,1071769,44,Writing a resume,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"The sequence contains 4 moves. It uses these move types: Social_Opening, Social_Closing. Repeated runs: Social_Opening x2, Social_Closing x2. It begins with Social_Opening and ends with Social_Closing.",4,"YOUR CURRENT STRUCTURE:
+You start with a social opening, then repeatedly introduce yourself and your location. You end with two social closings.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically have clearer structure by varying their moves more.
+
+ONE THING TO TRY:
+Try to add one more move about something you like or enjoy doing. This can make your profile more interesting and engaging, following a Social_Opening with a Self_Interest move before concluding with Social_Closings.","Great job starting with your name and age! It's good that you mentioned where you're from. You have a few ideas but not quite organized yet. Try to break it down into small parts like this:
+
+1. Start by introducing yourself (name and age).
+2. Tell us where you come from.
+3. Say where you live now.
+4. End with a friendly closing.
+
+Your essay has all the right information, just needs a bit of rearranging to make it clearer. Keep trying!","Great job! You've shared a clear introduction about yourself. It’s nice to see you start with your name and age, followed by where you're from. Next time, consider adding information about what you do or enjoy doing. This will make your profile more interesting. Keep up the good work!"

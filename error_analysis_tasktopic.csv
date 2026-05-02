@@ -1,0 +1,162 @@
+writing_id,task_topic,task_type,c2_task_topic,edit_distance,move_sequence,c2_sequence,feedback_rag,feedback_oneshot,RAG_specificity,RAG_helpfulness,RAG_validity,One-shot_specificity,One-shot_helpfulness,One-shot_validity,rag_vs_oneshot_specificity,rag_vs_oneshot_helpfulness,rag_vs_oneshot_validity,heuristic_flags,error_type_primary,error_type_secondary,notes
+694,Writing an online profile,narrative,Writing a resume,3,Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing -> Social_Closing,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start with a social opening, then keep introducing yourself multiple times. You end with two social closings.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers use fewer self-introductions and more variety in their moves.
+
+ONE THING TO TRY:
+Try adding one more sentence about your interests or hobbies to make it more interesting. This is a Social_Opening move that can engage the reader better.","Great job telling us your name and where you're from! You could add a little more about what you do now or your interests. This would make your profile more interesting. Think of it like adding a few fun facts at the end, like ""I love playing soccer!"" Keep up the good work, Ronaldo!",3.0,3.0,2.0,4.0,4.0,4.0,-1.0,-1.0,-2.0,"abstract-advice, explicit-move-label, large-validity-gap, large-helpfulness-gap",inaccurate move labelling,pedagogically weak contrast,Suggests adding hobbies but labels the revision as a Social_Opening move.
+2698,Writing an online profile,narrative,Writing a resume,4,Self_Introduction -> Self_Introduction -> Self_Introduction -> Opinion_Evaluation -> Social_Opening -> Social_Closing,Information_Reporting -> Information_Reporting -> Social_Closing -> Opinion_Evaluation -> Social_Closing -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start by introducing yourself twice and then say you like to cook. You end with a social closing.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often provide more information about themselves before ending the profile.
+
+ONE THING TO TRY:
+Try adding one or two sentences about your interests or hobbies after introducing yourself, like ""I enjoy traveling and meeting new people."" This will help give others a better idea of who you are.","Great job! You have all the main parts of your profile. You started with introducing yourself, told us where you're from and what you like to do. It's clear and easy to understand. Maybe you could add a bit more about yourself or your interests to make it longer and more interesting. Keep up the good work!",3.0,3.0,2.0,4.0,3.2,4.0,-1.0,-0.2000000000000001,-2.0,"weaker-retrieval, large-validity-gap",generic feedback,pedagogically weak contrast,Advice to add more interests is broadly appropriate but too general and only weakly grounded in the diagnosed contrast.
+2861,Updating your online profile,narrative,Writing a resume,4,Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Other -> Information_Reporting -> Information_Reporting,Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting,"YOUR CURRENT STRUCTURE:
+You keep repeating your self-introduction and tell us about yourself over and over.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers usually introduce themselves once and then move on to the main topic without repetition.
+
+ONE THING TO TRY:
+Try introducing yourself only once, like at the beginning. Then focus on updating your online profile by adding interesting information about your job or hobbies. This will make your writing more varied and engaging.","Great job telling us about yourself! You start with your name and age, then where you're from. Then you tell us about your job and where you work. This is easy to follow. Next time, try grouping the information about your job together at the end to make it look more organized. Keep up the good work!",3.0,2.8,2.4,4.0,4.0,4.0,-1.0,-1.2000000000000002,-1.6,"repetition-focused, weaker-retrieval, large-validity-gap, large-helpfulness-gap",pedagogically weak contrast,task mismatch,Focuses on repeated self-introduction rather than the more useful issue of organizing profile information for the update task.
+2878,Signing up for a dating website,narrative,Writing a resume,3,Physical_Description -> Physical_Description -> Physical_Description -> Opinion_Evaluation,Information_Reporting -> Physical_Description -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You describe yourself three times and then say you are happy.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically start with providing information about themselves before closing the essay, unlike your repeated physical descriptions.
+
+ONE THING TO TRY:
+Start by describing one aspect of yourself, like your age or interests. This follows a more common structure and helps focus on who you are. Use ""Information_Reporting"" to begin.","Great job! You're telling us about yourself in a clear way. It’s good that you included your name, age, and physical description. Next time, you could add more details about what you like or are interested in. This will help people get to know you better. Keep up the good work!",3.0,2.4,2.6,3.0,3.0,4.0,0.0,-0.6000000000000001,-1.4,"repetition-focused, explicit-move-label, large-validity-gap",inaccurate move labelling,task mismatch,Treats age or interests as Information_Reporting in a way that weakens the dating-profile purpose of the suggestion.
+796,Introducing yourself by email,narrative,Writing a resume,4,Social_Opening -> Social_Closing -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Other -> Social_Closing,Social_Opening -> Information_Reporting -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start by greeting Anna and then introduce yourself a few times. You also mention your family plans at the end.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often report information clearly in one part of their text, which is missing here.
+
+ONE THING TO TRY:
+Try introducing yourself just once and add some details about where you work or what you like to do. This will make your email more organized and easier to read. You can use ""I live in Belo Horizonte and I work as a teacher.""","Great job, Elias! Your message is easy to understand. You start by saying hello and asking Anna how she is. Then you tell her your name and age. Next, you share where you live and who you live with. Finally, you end with a friendly note. This structure is clear and easy for Anna to follow. Keep it up!",3.0,2.6,2.0,3.8,4.0,3.2,-0.7999999999999998,-1.4,-1.2000000000000002,"weaker-retrieval, large-validity-gap, large-helpfulness-gap",pedagogically weak contrast,generic feedback,"Diagnoses a missing reporting section even though the email is already structurally clear, leading to unnecessary generic advice."
+1940,Signing up for a dating website,narrative,Writing a resume,3,Physical_Description -> Other -> Physical_Description -> Physical_Description -> Opinion_Evaluation,Information_Reporting -> Physical_Description -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You describe yourself physically three times and then say you are happy.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically start with describing their physical appearance once, followed by an opinion or evaluation about themselves.
+
+ONE THING TO TRY:
+Start your description by mentioning your height and build just once, like ""I am tall and slim."" Then share your opinions or feelings afterward. This will help organize your thoughts better.","Great job, Marco! You're doing well by telling us about yourself in a clear way. It's good that you included your name, age, and physical description. Next time, try grouping similar information together to make it easier to read. For example, put all the physical details like hair color, eye color, height, and weight in one place. Keep up the good work!",3.0,3.0,2.8,3.0,3.0,4.0,0.0,0.0,-1.2000000000000002,large-validity-gap,pedagogically weak contrast,task mismatch,The A1-C2 contrast is overinterpreted into a rigid ordering rule rather than advice that better serves the dating-profile task.
+380,Making a dinner party menu,descriptive,Rescheduling an appointment,2,Social_Opening -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,Social_Closing -> Social_Closing -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start with a greeting and then list your menu items without any closing remarks.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often close their writing to show they are finished. The C2 sequence ends with Social_Closing twice, which helps clarify the end of the text.
+
+ONE THING TO TRY:
+Add a sentence at the end saying ""See you soon, Andreza"" or something similar to close your menu list properly. This is a Social_Closing move that shows you are done.","Great job organizing your menu into different parts! You have starters, main courses, desserts, and drinks. To make it even clearer, you could add short sentences to introduce each section, like ""Let's start with some tasty starters..."" or ""For the main course, we'll have..."". Keep up the good work!",3.0,2.6,3.0,4.0,4.0,4.0,-1.0,-1.4,-1.0,"explicit-move-label, large-validity-gap, large-helpfulness-gap",task mismatch,inaccurate move labelling,"Adds a social closing to a menu task, which is not the most appropriate structural improvement for this genre."
+246,Signing up for a dating website,narrative,Writing a resume,3,Physical_Description -> Physical_Description -> Opinion_Evaluation -> Opinion_Evaluation,Information_Reporting -> Physical_Description -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You describe yourself twice and then give your opinions.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers usually introduce themselves first with a physical description before sharing their opinions.
+
+ONE THING TO TRY:
+Start by describing your appearance, like ""I'm short and slim with blond hair and green eyes."" This helps set the scene for readers.","Great job telling us about yourself! You share your name and age first, then describe what you look like. This is clear and easy to follow. One idea is to add a bit more about your interests or what you're looking for in a partner. Otherwise, well done! Keep it simple and positive.",3.0,3.0,3.0,4.0,4.0,4.0,-1.0,-1.0,-1.0,"large-validity-gap, large-helpfulness-gap",task mismatch,pedagogically weak contrast,Pushes the learner toward physical description order instead of suggesting more useful dating-profile content such as interests or partner goals.
+2330,Introducing yourself by email,narrative,Writing a resume,3,Social_Opening -> Social_Closing -> Social_Opening -> Self_Introduction -> Self_Introduction -> Social_Closing -> Social_Closing,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start with a social opening, then introduce yourself, and end with two closings.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically have a more balanced structure without repetitive openings and closings.
+
+ONE THING TO TRY:
+Try adding one self-introduction move between your current ones. For example: ""Hi! Fine thanks. How are you? My name's Cristina, I'm 26 years old."" This will make your email more organized and clear.","Great start, Cristina! You've included important parts like saying hello, asking how the other person is doing, and mentioning your name and age. It’s good to keep it simple. Adding a little more detail about where you are from or what you do could make your email even better! Keep up the good work!",2.8,2.0,2.0,4.0,3.0,3.0,-1.2000000000000002,-1.0,-1.0,"closing-emphasis, large-validity-gap, large-helpfulness-gap",pedagogically weak contrast,task mismatch,The contrast leads to an odd suggestion to add another self-introduction move rather than expanding the email with more relevant personal details.
+2389,Signing up for a dating website,narrative,Writing a resume,3,Self_Introduction -> Physical_Description -> Physical_Description -> Other -> Physical_Description,Information_Reporting -> Physical_Description -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start by introducing yourself and then describe your physical appearance three times.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically introduce themselves once and then move on to describing their physical characteristics just once.
+
+ONE THING TO TRY:
+Try writing a clear self-introduction at the beginning, followed by a single description of how you look. This will make your essay more organized and easier to read.","Great job, Marco! You've introduced yourself clearly with your name and age first. It’s good that you mentioned your physical traits next. To make it even clearer, try grouping related information together. For example, put all the physical details like hair color and height in one sentence. Keep up the good work!",3.0,3.0,3.0,4.0,4.0,4.0,-1.0,-1.0,-1.0,"abstract-advice, large-validity-gap, large-helpfulness-gap",generic feedback,pedagogically weak contrast,The suggestion to write a clearer introduction and single description is plausible but broad and not especially tailored to the essay.
+2417,Writing an online profile,narrative,Writing a resume,4,Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Narrative_Experience -> Social_Opening -> Social_Closing -> Social_Closing,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start by greeting and introducing yourself twice, then mention your place of origin, love for Rio de Janeiro, and hobbies. You end with a friendly closing.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically open and close their profiles more clearly and use fewer repetitive introductions.
+
+ONE THING TO TRY:
+Try opening your profile just once at the beginning and closing it at the end. This will make your writing clearer and more focused. Use a Social_Opening move to start and a Social_Closing move to finish.","Great job, Tiago! You started with your name and age, which is good. Then you told us where you're from and what you like, but it would be nice to put the information about Rio de Janeiro and chess together in one sentence. This makes your profile easier to read. Keep up the good work!",3.0,2.0,2.0,3.0,3.0,3.0,0.0,-1.0,-1.0,"abstract-advice, explicit-move-label, weaker-retrieval, large-validity-gap, large-helpfulness-gap",pedagogically weak contrast,generic feedback,"Overemphasizes opening and closing moves, but does not turn the structural diagnosis into a more useful revision of the profile content."
+3323,Updating your online profile,narrative,Writing a resume,4,Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Information_Reporting -> Information_Reporting -> Information_Reporting,Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting -> Information_Reporting,"YOUR CURRENT STRUCTURE:
+You start by introducing yourself four times and then provide three pieces of information about your job.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically vary their introduction to keep the text more engaging. They might combine information reporting with other types of moves, like adding a personal touch or a goal statement.
+
+ONE THING TO TRY:
+Add one sentence at the end expressing why you want to update your online profile. This can be an Information_Reporting move that adds context to your writing.","Great job, Selina! Your profile is clear and easy to understand. You start by telling us your name and age, which is good. Then you share where you're from and live, followed by your job information. This order works well. To make it even better, you could consider grouping the information about your workplace together at the end. Keep up the good work!",3.0,3.0,3.0,4.0,4.0,4.0,-1.0,-1.0,-1.0,"explicit-move-label, weaker-retrieval, large-validity-gap, large-helpfulness-gap",task mismatch,inaccurate move labelling,"Suggests adding a goal statement about updating the profile and labels it as Information_Reporting, which is only weakly justified by the essay."
+3347,Describing your family in an email,descriptive,Writing an email of advice,5,Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction,Social_Opening -> Social_Closing -> Social_Closing -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start by saying hello and introduce yourself multiple times. Then you talk about your family.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically close their emails with polite phrases at the end.
+
+ONE THING TO TRY:
+Add a closing line like ""It was nice meeting you, Maria."" This will complete your email properly. This is called a Social_Closing move.","Great job! You started with a friendly greeting and told Maria your name. Then you said how many people are in your family and where they live. It’s good to mention each family member by name next time. Here’s one suggestion to make it even clearer:
+
+""Hello Maria,  
+How are you? My name's Fabio. There are four people in my family: my parents and my sister. We all live in São Paulo, Brazil. My mother is fifty-six, my father is fifty-two, and my sister is thirty. Nice to meet you!""
+
+This way, it’s easy for Maria to understand who everyone is. Keep up the good work!",3.0,3.0,3.0,4.8,4.0,4.0,-1.7999999999999998,-1.0,-1.0,"closing-emphasis, explicit-move-label, weaker-retrieval, large-validity-gap, large-helpfulness-gap",task mismatch,inaccurate move labelling,"Recommends a closing line for a family-description email, but the more useful improvement would be clearer family content rather than an extra closing."
+2834,Introducing yourself by email,narrative,Writing a resume,2,Social_Opening -> Self_Introduction -> Self_Introduction -> Social_Closing -> Social_Closing,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start by saying hello and opening the conversation, then introduce yourself twice, and end with a closing statement.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically use more varied openers and closers in their emails.
+
+ONE THING TO TRY:
+Try adding a simple reason for your email after the social opener. This can be as simple as ""I hope this message finds you well!"" It's a good way to transition into your introduction.","Great job starting with a greeting and mentioning how you are! It’s nice to hear that you’re fine. Your next step is perfect too—introducing yourself by name. 
+
+Just one suggestion: You could add more about yourself after your age, like where you're from or what you do. Then end with a friendly closing. This will make your email longer and more interesting!
+
+Keep up the good work!",3.0,2.4,2.0,4.0,3.0,3.0,-1.0,-0.6000000000000001,-1.0,"closing-emphasis, large-validity-gap",task mismatch,generic feedback,Adds a vague transitional sentence rather than helping the learner expand the self-introduction content more directly.
+2689,Making a dinner party menu,descriptive,Writing an email of advice,2,Social_Opening -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing -> Social_Closing,Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start by saying hello and introduce your menu. Then you list each dish one by one without much detail or evaluation.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often provide more evaluations or opinions on their choices, like why they picked certain dishes.
+
+ONE THING TO TRY:
+Add a sentence after each dish to say something about it, such as ""The chocolate cake is our specialty!"" This will help give your menu more detail and interest. You can use the Opinion_Evaluation move type for this.","Great job organizing your menu into different sections! You did a good job by adding ""The starter is"" and ""The main course is"" to separate your food choices. Adding a sentence at the end like ""I hope you enjoy my menu!"" would be a nice touch too. Keep up the good work!",3.0,3.0,3.0,4.0,3.0,4.0,-1.0,0.0,-1.0,"explicit-move-label, large-validity-gap",task mismatch,inaccurate move labelling,"Encourages opinion statements after each menu item, which is not the most natural structural fit for the dinner-menu task."
+1755,Writing an online profile,narrative,Writing a resume,4,Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing,Social_Opening -> Information_Reporting -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start by greeting someone, introduce yourself three times, and then end with a goodbye.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically provide more information about themselves in a balanced way without repeating the same details multiple times.
+
+ONE THING TO TRY:
+Try adding one interesting fact about yourself after introducing your name. This will make your profile more engaging. For example, ""Hi! My name's Angel, and I love traveling. I'm thirty-four years old from Luoyang, China.""","Great start! You told us your name and age first. Then you said where you're from. That’s good! It's clear and easy to understand. Maybe next time, you could add a little more about yourself after saying goodbye. Like what you like or do in your free time. Keep up the good work!",3.0,3.0,2.0,4.0,3.0,3.0,-1.0,0.0,-1.0,"repetition-focused, weaker-retrieval, large-validity-gap",generic feedback,pedagogically weak contrast,The suggestion to add an interesting fact is acceptable but fairly generic and only loosely tied to the diagnosed repetition pattern.
+3346,Writing an online profile,narrative,Writing a resume,4,Social_Opening -> Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start with a social opening twice and end with a goodbye. You introduce yourself three times.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically have a clearer beginning and ending without repeating themselves too much.
+
+ONE THING TO TRY:
+Try starting once, say your name and age, then add details about where you're from. End by saying nice to meet you. This helps keep the profile clear and friendly.","Great job! You've included all the necessary information in your profile. It's nice to see you start with a friendly greeting and then introduce yourself clearly. Next time, you could try grouping your personal details together first, like your name and age, followed by where you're from. This makes it easier for readers to understand your profile. Keep up the good work!",3.0,3.0,2.0,3.0,3.0,3.0,0.0,0.0,-1.0,"repetition-focused, abstract-advice, weaker-retrieval, large-validity-gap",generic feedback,pedagogically weak contrast,"Recommends a cleaner order of profile details, but the advice remains broad and does not clearly improve the specific text."
+3788,Writing an online profile,narrative,Writing a resume,4,Social_Opening -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Self_Introduction -> Social_Opening -> Social_Closing -> Social_Closing,Social_Opening -> Social_Opening -> Social_Closing -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start with a social opening, then repeatedly introduce yourself and your location. You end with two social closings.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers typically have clearer structure by varying their moves more.
+
+ONE THING TO TRY:
+Try to add one more move about something you like or enjoy doing. This can make your profile more interesting and engaging, following a Social_Opening with a Self_Interest move before concluding with Social_Closings.","Great job! You've shared a clear introduction about yourself. It’s nice to see you start with your name and age, followed by where you're from. Next time, consider adding information about what you do or enjoy doing. This will make your profile more interesting. Keep up the good work!",4.0,3.0,3.0,3.0,3.0,4.0,1.0,0.0,-1.0,"repetition-focused, explicit-move-label, weaker-retrieval, large-validity-gap",inaccurate move labelling,generic feedback,Introduces a questionable move label and gives a broad suggestion to add interests without much task-specific precision.
+1479,Making a dinner party menu,descriptive,Rescheduling an appointment,2,Social_Opening -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,Social_Closing -> Social_Closing -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Opinion_Evaluation -> Social_Closing,"YOUR CURRENT STRUCTURE:
+You start with a greeting and then list your menu items one by one without any closing remarks.
+
+WHAT ADVANCED WRITERS DO DIFFERENTLY:
+Advanced writers often use a social opening to begin and a closing remark to end their writing, even in simple tasks like making a dinner party menu.
+
+ONE THING TO TRY:
+Try adding a polite closing at the end of your essay. For example: ""Thank you for reading my menu."" This is a Social_Closing move that will make your writing more complete and polite.","Great job organizing your menu into main course, starter, dessert, and drinks! Adding a short sentence at the beginning to introduce the menu would be helpful. For example: ""Here is my dinner party menu:"" This makes it clear what you're sharing. Keep up the good work!",3.0,3.0,3.0,4.0,4.0,3.0,-1.0,-1.0,0.0,"explicit-move-label, large-helpfulness-gap",task mismatch,inaccurate move labelling,A polite closing is not the most helpful improvement for a dinner-party menu and is framed too strongly as a required Social_Closing move.
