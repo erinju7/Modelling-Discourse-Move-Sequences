@@ -41,20 +41,6 @@ analysis, and sequence-level feature analysis.
 
 ---
 
-## Research Questions
-
-- **RQ1:** Can unsupervised clustering of sentence embeddings identify a
-  coherent set of discourse move categories in ESL learner writing?
-
-- **RQ2:** How do discourse move structures differ across CEFR levels, and
-  can these structural patterns support feedback generation for A1 learners?
-
-- **RQ3:** Does retrieval-augmented prompting using discourse move sequences
-  improve structure-focused feedback compared with zero-shot and one-shot
-  baselines?
-
----
-
 ## Repository Structure
 
 ```text
