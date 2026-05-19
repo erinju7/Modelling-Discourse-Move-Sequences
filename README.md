@@ -35,7 +35,7 @@ analysis, and sequence-level feature analysis.
 - **Levels covered:** A1-C2
 - **RQ1 output:** 8 discourse move categories from 44 non-noise clusters
 - **RQ2 setup:** zero-shot vs one-shot vs retrieval-augmented feedback
-- **Evaluation set:** 30 held-out A1 essays
+- **Evaluation set:** 60 held-out A1 essays
 - **Judge model:** Claude Sonnet (task-aware evaluation)
 - **Generation model:** Qwen2.5-7B via Ollama
 
@@ -100,12 +100,12 @@ The most important final outputs are:
 - `clustering_meta.csv` - sentence-level metadata with cluster assignments
 - `clustering_labelled.csv` - sentence-level discourse move labels
 - `essay_sequences.csv` - essay-level move sequences
-- `csv/feedback_n30.csv` - generated feedback for the 30-essay RQ2 evaluation set
-- `csv/scores_n30_claude_tasktopic.csv` - task-aware judge scores
-- `csv/results_table_n30_tasktopic.csv` - descriptive statistics for RQ2
-- `csv/wilcoxon_rq2_tasktopic.csv` - pairwise Wilcoxon results
-- `csv/sensitivity_results_tasktopic.csv` - retrieval-quality sensitivity analysis
-- `csv/error_analysis_tasktopic.csv` - manually coded error analysis for weaker RAG cases
+- `feedback_n60.csv` - generated feedback for the 60-essay RQ2 evaluation set
+- `scores_n60_claude_tasktopic.csv` - task-aware judge scores
+- `csv/results_table_n60_tasktopic.csv` - descriptive statistics for RQ2
+- `csv/wilcoxon_n60_tasktopic.csv` - pairwise Wilcoxon results
+- `csv/error_analysis_n60_tasktopic.csv` - error-analysis cases for weaker RAGF outputs
+- `csv/error_analysis_n60_summary.csv` - summary of primary RAGF error types
 - `csv/sequence_features_summary.csv` - CEFR-level sequence feature summary
 
 Tracked figures are stored in `figs/`, and tracked result tables are stored
@@ -119,7 +119,7 @@ files are explicitly tracked in this repository.
 ## Installation
 
 ```bash
-git clone https://github.com/erinju7/Modelling-Discourse-Move-Sequences.git
+git clone https://anonymous.4open.science/r/Modelling-Discourse-Move-Sequences-2712/
 cd Modelling-Discourse-Move-Sequences
 pip install -r requirements.txt
 python3 -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
@@ -179,16 +179,17 @@ python3 src/build_c2_knowledge_graph.py
 ### RQ2: Feedback generation and evaluation
 
 ```bash
-python3 src/07_select_eval_essays.py
-OUT_CSV=csv/feedback_n30.csv python3 src/generate_feedback_n30.py
-python3 src/09_evaluate_rq2_tasktopic.py
-SCORES_CSV=csv/scores_n30_claude_tasktopic.csv \
-OUT_TABLE=csv/results_table_n30_tasktopic.csv \
-OUT_PLOT=figs/results_n30_tasktopic.png \
+N_EVAL=60 OUT_CSV=eval_essays_n60.csv python3 src/07_select_eval_essays.py
+EVAL_CSV=eval_essays_n60.csv OUT_CSV=feedback_n60.csv python3 src/generate_feedback_n30.py
+FEEDBACK_CSV=feedback_n60.csv OUT_CLAUDE=scores_n60_claude_tasktopic.csv \
+N_RUNS=5 python3 src/09_evaluate_rq2_tasktopic.py
+SCORES_CSV=scores_n60_claude_tasktopic.csv \
+OUT_TABLE=csv/results_table_n60_tasktopic.csv \
+OUT_STATS=csv/wilcoxon_n60_tasktopic.csv \
+OUT_PLOT=/tmp/results_n60_tasktopic.png \
 python3 src/10_analyse_rq2.py
-SCORES_CSV=csv/scores_n30_claude_tasktopic.csv \
-OUT_CSV=csv/sensitivity_results_tasktopic.csv \
-python3 src/sensitivity_analysis.py
+FEEDBACK_CSV=feedback_n60.csv SCORES_CSV=scores_n60_claude_tasktopic.csv \
+OUT_CSV=csv/error_analysis_n60_tasktopic.csv \
 python3 src/error_analysis_tasktopic.py
 ```
 
@@ -198,14 +199,14 @@ python3 src/error_analysis_tasktopic.py
 
 The final RQ2 evaluation compares three conditions:
 
-- **C1 Zero-shot**
+- **ZSF: Zero-shot feedback**
   - task topic + learner essay
 
-- **C2 One-shot**
+- **OSF: One-shot feedback**
   - task topic + learner essay + one held-out A1 example with ESL-teacher
     feedback, matched by broad task type
 
-- **C3 Retrieval-Augmented Feedback**
+- **RAGF: Retrieval-augmented feedback**
   - task topic + learner essay + learner move sequence + retrieved C2 move
     sequence + short structural summary
   - the retrieved C2 sequence is used as a **contrastive structural hint**,
@@ -249,37 +250,40 @@ across CEFR levels and therefore reflect both proficiency and task design.
 
 ### RQ2 Summary
 
-Task-aware Claude evaluation on 30 held-out A1 essays:
+Task-aware Claude evaluation on 60 held-out A1 essays:
 
-| Dimension | RAG | Zero-shot | One-shot |
+| Dimension | RAGF | ZSF | OSF |
 |---|---:|---:|---:|
-| Specificity | 3.07 ± 0.37 | 3.01 ± 0.45 | 3.53 ± 0.60 |
-| Helpfulness | 2.79 ± 0.45 | 3.03 ± 0.60 | 3.16 ± 0.70 |
-| Validity | 2.56 ± 0.53 | 2.91 ± 0.43 | 3.27 ± 0.76 |
+| Specificity | 3.03 ± 0.48 | 2.85 ± 0.59 | 3.33 ± 0.66 |
+| Helpfulness | 2.67 ± 0.57 | 2.77 ± 0.60 | 3.11 ± 0.67 |
+| Validity | 2.49 ± 0.53 | 2.84 ± 0.68 | 3.21 ± 0.75 |
 
-Main significance result after Bonferroni correction:
+Main significance results after Bonferroni correction:
 
-- **Validity: RAG vs One-shot**
-  - `p_corr = 0.0009`
-  - `r_rb = -0.826`
+- **RAGF vs OSF:** OSF significantly outperformed RAGF on specificity
+  (`p_corr = 0.0234`, `r_rb = -0.438`), helpfulness
+  (`p_corr = 0.0001`, `r_rb = -0.714`), and validity
+  (`p_corr < 0.0001`, `r_rb = -0.867`).
+- **ZSF vs OSF:** OSF significantly outperformed ZSF on specificity
+  (`p_corr = 0.0002`, `r_rb = -0.568`), helpfulness
+  (`p_corr = 0.0189`, `r_rb = -0.474`), and validity
+  (`p_corr = 0.0092`, `r_rb = -0.450`).
+- **RAGF vs ZSF:** RAGF did not significantly differ from ZSF on
+  specificity or helpfulness, but scored significantly lower on validity
+  (`p_corr = 0.0087`, `r_rb = -0.600`).
 
-Sensitivity analysis:
+Error analysis of the 38 cases where RAGF scored lower than OSF on
+helpfulness or validity identified these primary error types:
 
-- when restricted to retrievals with `edit_distance <= 3`, the RAG vs
-  one-shot validity difference no longer remained significant after
-  correction (`p_corr = 0.0555`), although the mean gap persisted
-
-Error analysis of the 19 cases where RAG scored lower than one-shot on
-helpfulness or validity showed these primary error types:
-
-- task mismatch: **7** cases (36.8%)
-- pedagogically weak contrast: **5** cases (26.3%)
-- generic feedback: **4** cases (21.1%)
-- inaccurate move labelling: **3** cases (15.8%)
+- retrieval/task mismatch: **25** cases (65.8%)
+- weak structural diagnosis: **9** cases (23.7%)
+- too abstract/generic: **1** case (2.6%)
+- other: **3** cases (7.9%)
 
 Overall, the final results support one-shot prompting as the strongest
 condition in this setup, while suggesting that discourse-move-based retrieval
-is informative but fragile.
+is informative but fragile: it makes structure explicit, but does not reliably
+translate retrieved C2 structural references into task-appropriate A1 feedback.
 
 ---
 
