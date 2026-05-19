@@ -11,7 +11,7 @@ import numpy as np, pandas as pd
 from pathlib import Path
 
 BASE         = Path("/Users/macbook/Desktop/AIED cw2")
-EVAL_CSV     = BASE / "eval_essays_n30.csv"
+EVAL_CSV     = BASE / os.environ.get("EVAL_CSV", "eval_essays_n30.csv")
 SEQ_FILE     = BASE / "essay_sequences.csv"
 C2_CORPUS    = BASE / "c2_corpus.csv"
 OUT_CSV      = BASE / os.environ.get("OUT_CSV", "feedback_n30.csv")
@@ -168,10 +168,14 @@ def oneshot_prompt(task_type, task_topic, essay_text):
 def call_llm(prompt, retries=3):
     for attempt in range(retries):
         try:
-            r = ollama.chat(model=MODEL, messages=[{"role": "user", "content": prompt}])
+            r = ollama.chat(
+                model=MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                options={"num_predict": 220},
+            )
             return r["message"]["content"].strip()
         except Exception as e:
-            print(f"  [retry {attempt+1}] {e}"); time.sleep(2)
+            print(f"  [retry {attempt+1}] {e}", flush=True); time.sleep(2)
     return ""
 
 
@@ -209,7 +213,7 @@ def summarize_move_sequence(seq):
 
 # ── Load eval essays ──────────────────────────────────────────────────────────
 
-print("Loading eval essays ...")
+print("Loading eval essays ...", flush=True)
 eval_df = pd.read_csv(EVAL_CSV).rename(columns={"genre": "task_type"})
 if MAX_ROWS > 0:
     eval_df = eval_df.head(MAX_ROWS)
@@ -228,11 +232,11 @@ for _, row in eval_df.iterrows():
 
 sample_ids       = list(essay_data.keys())
 task_type_counts = pd.Series([essay_data[w]["task_type"] for w in sample_ids]).value_counts().to_dict()
-print(f"Loaded {len(sample_ids)} essays  (task types: {task_type_counts})")
+print(f"Loaded {len(sample_ids)} essays  (task types: {task_type_counts})", flush=True)
 
 # ── Build task-type retrieval index ───────────────────────────────────────────
 
-print("\nBuilding task-type retrieval index ...")
+print("\nBuilding task-type retrieval index ...", flush=True)
 seq_df = pd.read_csv(SEQ_FILE)
 seq_df["move_sequence"] = seq_df["move_sequence"].apply(ast.literal_eval)
 seq_df["moves_clean"]   = seq_df["move_sequence"].apply(lambda s: [m for m in s if m != "Other"])
@@ -262,14 +266,23 @@ for task_type, topic_ids in C2_TASK_TYPE_TOPICS.items():
          "full_text":   c2_texts.get(r["writing_id"], "")}
         for _, r in sampled.iterrows() if r["writing_id"] in c2_texts
     ]
-    print(f"  {task_type}: {len(task_index[task_type])} C2 essays indexed")
+    print(f"  {task_type}: {len(task_index[task_type])} C2 essays indexed", flush=True)
 
 # ── Generate feedback ─────────────────────────────────────────────────────────
 
-print(f"\nGenerating feedback ({MODEL}) ...\n")
+print(f"\nGenerating feedback ({MODEL}) ...\n", flush=True)
 
 rows = []
+done_ids = set()
+if OUT_CSV.exists():
+    existing = pd.read_csv(OUT_CSV)
+    rows = existing.to_dict("records")
+    done_ids = set(existing["writing_id"].astype(int))
+    print(f"Resuming from {OUT_CSV.name}: {len(done_ids)} essays already complete", flush=True)
+
 for i, wid in enumerate(sample_ids):
+    if wid in done_ids:
+        continue
     info      = essay_data[wid]
     task_type = info["task_type"]
     task_topic = info["task_topic"]
@@ -281,7 +294,7 @@ for i, wid in enumerate(sample_ids):
     best_ed, best_c2 = scored[0]
     c2_summary = summarize_move_sequence(best_c2["moves_clean"])
 
-    print(f"[{i+1}/{len(sample_ids)}] writing_id={wid}  task_type={task_type}  edit_dist={best_ed}")
+    print(f"[{i+1}/{len(sample_ids)}] writing_id={wid}  task_type={task_type}  edit_dist={best_ed}", flush=True)
 
     fb_rag      = call_llm(RAG_PROMPT.format(
                       a1_task_topic=task_topic,
@@ -291,9 +304,9 @@ for i, wid in enumerate(sample_ids):
     fb_baseline = call_llm(BASELINE_PROMPT.format(task_topic=task_topic, essay_text=text))
     fb_oneshot  = call_llm(oneshot_prompt(task_type, task_topic, text))
 
-    print(f"  RAG:      {fb_rag[:70]}...")
-    print(f"  Baseline: {fb_baseline[:70]}...")
-    print(f"  One-shot: {fb_oneshot[:70]}...\n")
+    print(f"  RAG:      {fb_rag[:70]}...", flush=True)
+    print(f"  Baseline: {fb_baseline[:70]}...", flush=True)
+    print(f"  One-shot: {fb_oneshot[:70]}...\n", flush=True)
 
     rows.append({
         "writing_id":        wid,
@@ -312,7 +325,8 @@ for i, wid in enumerate(sample_ids):
         "feedback_baseline": fb_baseline,
         "feedback_oneshot":  fb_oneshot,
     })
+    pd.DataFrame(rows).to_csv(OUT_CSV, index=False)
 
 out_df = pd.DataFrame(rows)
 out_df.to_csv(OUT_CSV, index=False)
-print(f"Saved {len(out_df)} rows to {OUT_CSV}")
+print(f"Saved {len(out_df)} rows to {OUT_CSV}", flush=True)

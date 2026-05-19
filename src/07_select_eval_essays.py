@@ -6,7 +6,7 @@ Selection criteria: 4-8 sentences, ≥2 distinct discourse move types.
 Output: eval_essays_n30.csv
 """
 
-import ast, numpy as np, pandas as pd, nltk
+import ast, os, numpy as np, pandas as pd, nltk
 from pathlib import Path
 from lxml import etree
 from sentence_transformers import SentenceTransformer
@@ -18,9 +18,9 @@ BASE         = Path("/Users/macbook/Desktop/AIED cw2")
 XML_FILE     = BASE / "EFCAMDAT_Database.xml"
 LABELLED_CSV = BASE / "clustering_labelled.csv"
 EMB_FILE     = BASE / "clustering_embeddings_v2.npy"
-OUT_CSV      = BASE / "eval_essays_n30.csv"
+OUT_CSV      = BASE / os.environ.get("OUT_CSV", "eval_essays_n30.csv")
 
-N_EVAL         = 30
+N_EVAL         = int(os.environ.get("N_EVAL", "30"))
 SEED           = 42
 MIN_SENT       = 4
 MAX_SENT       = 8

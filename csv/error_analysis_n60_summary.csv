@@ -1,0 +1,5 @@
+error_type,count,percent
+retrieval/task mismatch,25,65.8
+weak structural diagnosis,9,23.7
+other,3,7.9
+too abstract/generic,1,2.6

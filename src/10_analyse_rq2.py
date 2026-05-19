@@ -20,6 +20,7 @@ from scipy import stats
 BASE        = Path("/Users/macbook/Desktop/AIED cw2")
 CLAUDE_CSV  = BASE / os.environ.get("SCORES_CSV", "scores_n30_claude.csv")
 OUT_TABLE   = BASE / os.environ.get("OUT_TABLE", "results_table_n30.csv")
+OUT_STATS   = BASE / os.environ.get("OUT_STATS", "wilcoxon_rq2.csv")
 OUT_PLOT    = BASE / os.environ.get("OUT_PLOT", "outputs/results_n30.png")
 
 CONDITIONS = ["RAG", "Baseline", "One-shot"]
@@ -64,7 +65,7 @@ def analyse(df: pd.DataFrame, judge_name: str) -> tuple[pd.DataFrame, pd.DataFra
         row = {"Judge": judge_name, "Dimension": dim.title()}
         for c in CONDITIONS:
             vals = scores[c][dim]
-            row[COND_LABELS[c]]            = f"{vals.mean():.2f} ± {vals.std():.2f}"
+            row[COND_LABELS[c]]            = f"{vals.mean():.2f} ± {vals.std(ddof=1):.2f}"
             row[f"_mean_{c}"]              = vals.mean()   # for sorting / plotting
         table_rows.append(row)
 
@@ -106,8 +107,8 @@ print(f"\nWilcoxon (Bonferroni α={BONFERRONI_ALPHA:.4f}):")
 print(results_stats[["Dimension","Comparison","p_value","p_corrected","significant","r_rb"]].to_string(index=False))
 
 results_table.to_csv(OUT_TABLE, index=False)
-results_stats.to_csv(OUT_TABLE.with_name("wilcoxon_rq2.csv"), index=False)
-print(f"\nSaved {OUT_TABLE.name}, wilcoxon_rq2.csv")
+results_stats.to_csv(OUT_STATS, index=False)
+print(f"\nSaved {OUT_TABLE.name}, {OUT_STATS.name}")
 
 # ── Plot: grouped bar chart ───────────────────────────────────────────────────
 

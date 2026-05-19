@@ -175,16 +175,25 @@ print(
     f"{len(DIMENSIONS)} dimensions x {N_RUNS} runs"
 )
 print(f"Judge: {CLAUDE_MODEL}")
-print(f"Output: {OUT_CLAUDE.name}\n")
+print(f"Output: {OUT_CLAUDE.name}\n", flush=True)
 
 rows = []
+done_ids = set()
+if OUT_CLAUDE.exists():
+    existing = pd.read_csv(OUT_CLAUDE)
+    rows = existing.to_dict("records")
+    done_ids = set(existing["writing_id"].astype(int))
+    print(f"Resuming from {OUT_CLAUDE.name}: {len(done_ids)} essays already complete", flush=True)
+
 for index, row in df.iterrows():
     writing_id = row["writing_id"]
+    if int(writing_id) in done_ids:
+        continue
     task_topic = row.get(
         "task_topic",
         A1_TASK_TOPICS.get(int(row["topic_id"]), f"Topic {row['topic_id']}"),
     )
-    print(f"[{index + 1}/{len(df)}] writing_id={writing_id}  task={task_topic}")
+    print(f"[{index + 1}/{len(df)}] writing_id={writing_id}  task={task_topic}", flush=True)
 
     result = {
         "writing_id": writing_id,
@@ -200,9 +209,12 @@ for index, row in df.iterrows():
         print(
             f"  {condition}: "
             + "  ".join(f"{dimension}={scores[dimension]}" for dimension in DIMENSIONS)
+            ,
+            flush=True,
         )
 
     rows.append(result)
+    pd.DataFrame(rows).to_csv(OUT_CLAUDE, index=False)
 
 out_df = pd.DataFrame(rows)
 out_df.to_csv(OUT_CLAUDE, index=False)

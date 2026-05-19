@@ -1,0 +1,10 @@
+Judge,Dimension,Comparison,W,p_value,p_corrected,significant,r_rb,mean_A,mean_B
+Claude Sonnet,Specificity,RAG vs Baseline,139.0,0.0507,0.4564,False,0.267,3.027,2.853
+Claude Sonnet,Specificity,RAG vs One-shot,106.5,0.0026,0.0234,True,-0.438,3.027,3.327
+Claude Sonnet,Specificity,Baseline vs One-shot,76.0,0.0,0.0002,True,-0.568,2.853,3.327
+Claude Sonnet,Helpfulness,RAG vs Baseline,282.5,0.4231,1.0,False,-0.222,2.673,2.767
+Claude Sonnet,Helpfulness,RAG vs One-shot,49.0,0.0,0.0001,True,-0.714,2.673,3.11
+Claude Sonnet,Helpfulness,Baseline vs One-shot,165.0,0.0021,0.0189,True,-0.474,2.767,3.11
+Claude Sonnet,Validity,RAG vs Baseline,167.0,0.001,0.0087,True,-0.6,2.493,2.84
+Claude Sonnet,Validity,RAG vs One-shot,55.5,0.0,0.0,True,-0.867,2.493,3.21
+Claude Sonnet,Validity,Baseline vs One-shot,170.0,0.001,0.0092,True,-0.45,2.84,3.21
