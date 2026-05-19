@@ -9,14 +9,14 @@ using the EFCAMDAT corpus.
 
 The project has two main components:
 
-1. **RQ1: Discourse move identification and structural analysis**
+1. **Stage 1: Discourse move identification and structural analysis**
    - sentence embeddings
    - UMAP + HDBSCAN clustering
    - qualitative consolidation of raw clusters into eight discourse move
      categories
    - CEFR-level move distributions and sequence-level structural features
 
-2. **RQ2: Structure-focused feedback generation**
+2. **Stage 2: Structure-focused feedback generation**
    - zero-shot baseline
    - one-shot prompting with held-out A1 examples and ESL-teacher feedback
    - retrieval-augmented prompting using discourse move sequences as a
