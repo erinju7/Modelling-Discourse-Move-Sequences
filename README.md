@@ -41,44 +41,6 @@ analysis, and sequence-level feature analysis.
 
 ---
 
-## Repository Structure
-
-```text
-.
-├── src/
-│   ├── 01_extract_essays.py
-│   ├── 02_build_datasets.py
-│   ├── 03_embed_sentences.py
-│   ├── 04_sample_for_clustering.py
-│   ├── 05_cluster_discourse_moves.py
-│   ├── 06_label_discourse_moves.py
-│   ├── 07_select_eval_essays.py
-│   ├── 08_generate_baseline_feedback.py
-│   ├── 09_oneshot_feedback_generation.py
-│   ├── 09_evaluate_rq2.py
-│   ├── 09_evaluate_rq2_tasktopic.py
-│   ├── 10_analyse_rq2.py
-│   ├── 10_evaluate_all_conditions.py
-│   ├── analyse_a1_sequences.py
-│   ├── analyse_c2_sequences.py
-│   ├── analyse_sequence_features.py
-│   ├── build_a1_knowledge_graph.py
-│   ├── build_c2_knowledge_graph.py
-│   ├── claude_eval_n30.py
-│   ├── error_analysis_tasktopic.py
-│   ├── generate_feedback_n30.py
-│   ├── inspect_clusters.py
-│   ├── sensitivity_analysis.py
-│   ├── silhouette_eval.py
-│   └── visualise_umap.py
-├── figs/
-├── csv/
-├── README.md
-└── requirements.txt
-```
-
----
-
 ## Key Outputs
 
 The most important final outputs are:
