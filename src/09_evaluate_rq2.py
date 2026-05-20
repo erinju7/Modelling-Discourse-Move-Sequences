@@ -17,8 +17,8 @@ import numpy as np, pandas as pd
 from pathlib import Path
 
 BASE         = Path("/Users/macbook/Desktop/AIED cw2")
-FEEDBACK_CSV = BASE / os.environ.get("FEEDBACK_CSV", "feedback_n30.csv")
-OUT_CLAUDE   = BASE / os.environ.get("OUT_CLAUDE", "scores_n30_claude.csv")
+FEEDBACK_CSV = BASE / os.environ.get("FEEDBACK_CSV", "feedback_n60.csv")
+OUT_CLAUDE   = BASE / os.environ.get("OUT_CLAUDE", "scores_n60_claude.csv")
 
 N_RUNS       = 5
 CLAUDE_MODEL = "claude-sonnet-4-6"

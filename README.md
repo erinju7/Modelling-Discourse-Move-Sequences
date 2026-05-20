@@ -67,7 +67,7 @@ files are explicitly tracked in this repository.
 ## Installation
 
 ```bash
-git clone https://anonymous.4open.science/r/Modelling-Discourse-Move-Sequences-2712/
+git clone https://github.com/erinju7/Modelling-Discourse-Move-Sequences.git
 cd Modelling-Discourse-Move-Sequences
 pip install -r requirements.txt
 python3 -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
@@ -128,7 +128,7 @@ python3 src/build_c2_knowledge_graph.py
 
 ```bash
 N_EVAL=60 OUT_CSV=eval_essays_n60.csv python3 src/07_select_eval_essays.py
-EVAL_CSV=eval_essays_n60.csv OUT_CSV=feedback_n60.csv python3 src/generate_feedback_n30.py
+EVAL_CSV=eval_essays_n60.csv OUT_CSV=feedback_n60.csv python3 src/generate_feedback.py
 FEEDBACK_CSV=feedback_n60.csv OUT_CLAUDE=scores_n60_claude_tasktopic.csv \
 N_RUNS=5 python3 src/09_evaluate_rq2_tasktopic.py
 SCORES_CSV=scores_n60_claude_tasktopic.csv \

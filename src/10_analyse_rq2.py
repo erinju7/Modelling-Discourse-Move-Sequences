@@ -6,8 +6,8 @@ Statistical analysis of RQ2 evaluation results.
 - Rank-biserial correlation (effect size)
 - Results table (mean ± SD per condition × dimension)
 
-Inputs:  scores_rq2_claude.csv
-Outputs: results_table_rq2.csv, wilcoxon_rq2.csv, results_rq2.png
+Inputs:  scores_n60_claude_tasktopic.csv by default
+Outputs: results_table_n60_tasktopic.csv, wilcoxon_n60_tasktopic.csv
 """
 
 import os
@@ -18,10 +18,10 @@ from itertools import combinations
 from scipy import stats
 
 BASE        = Path("/Users/macbook/Desktop/AIED cw2")
-CLAUDE_CSV  = BASE / os.environ.get("SCORES_CSV", "scores_n30_claude.csv")
-OUT_TABLE   = BASE / os.environ.get("OUT_TABLE", "results_table_n30.csv")
-OUT_STATS   = BASE / os.environ.get("OUT_STATS", "wilcoxon_rq2.csv")
-OUT_PLOT    = BASE / os.environ.get("OUT_PLOT", "outputs/results_n30.png")
+CLAUDE_CSV  = BASE / os.environ.get("SCORES_CSV", "scores_n60_claude_tasktopic.csv")
+OUT_TABLE   = BASE / os.environ.get("OUT_TABLE", "csv/results_table_n60_tasktopic.csv")
+OUT_STATS   = BASE / os.environ.get("OUT_STATS", "csv/wilcoxon_n60_tasktopic.csv")
+OUT_PLOT    = BASE / os.environ.get("OUT_PLOT", "/tmp/results_n60_tasktopic.png")
 
 CONDITIONS = ["RAG", "Baseline", "One-shot"]
 COND_LABELS = {"RAG": "RAG", "Baseline": "Zero-shot Baseline", "One-shot": "One-shot"}

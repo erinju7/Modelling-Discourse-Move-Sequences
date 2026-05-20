@@ -7,7 +7,7 @@ cases where RAG underperforms and provide lightweight heuristic flags
 that make manual coding faster.
 
 Outputs:
-    error_analysis_tasktopic.csv
+    error_analysis_n60_tasktopic.csv
 """
 
 from pathlib import Path
@@ -17,9 +17,9 @@ import re
 import pandas as pd
 
 BASE = Path("/Users/macbook/Desktop/AIED cw2")
-FEEDBACK_CSV = BASE / os.environ.get("FEEDBACK_CSV", "feedback_n30.csv")
-SCORES_CSV = BASE / os.environ.get("SCORES_CSV", "scores_n30_claude_tasktopic.csv")
-OUT_CSV = BASE / os.environ.get("OUT_CSV", "error_analysis_tasktopic.csv")
+FEEDBACK_CSV = BASE / os.environ.get("FEEDBACK_CSV", "feedback_n60.csv")
+SCORES_CSV = BASE / os.environ.get("SCORES_CSV", "scores_n60_claude_tasktopic.csv")
+OUT_CSV = BASE / os.environ.get("OUT_CSV", "csv/error_analysis_n60_tasktopic.csv")
 
 
 def norm_text(text):

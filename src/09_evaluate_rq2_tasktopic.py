@@ -3,10 +3,9 @@
 Evaluate generated feedback using Claude Sonnet as judge, with task topic
 included in the judge prompt.
 
-This is intended as a robustness check for the original essay-only judge:
-scores_n30_claude.csv.
+This is the final task-aware judge used for the RQ2 feedback evaluation.
 
-Output: scores_n30_claude_tasktopic.csv
+Default output: scores_n60_claude_tasktopic.csv
 """
 
 import json
@@ -20,9 +19,9 @@ import anthropic
 import pandas as pd
 
 BASE = Path("/Users/macbook/Desktop/AIED cw2")
-FEEDBACK_CSV = BASE / os.environ.get("FEEDBACK_CSV", "feedback_n30.csv")
+FEEDBACK_CSV = BASE / os.environ.get("FEEDBACK_CSV", "feedback_n60.csv")
 OUT_CLAUDE = BASE / os.environ.get(
-    "OUT_CLAUDE", "scores_n30_claude_tasktopic.csv"
+    "OUT_CLAUDE", "scores_n60_claude_tasktopic.csv"
 )
 
 N_RUNS = int(os.environ.get("N_RUNS", "5"))

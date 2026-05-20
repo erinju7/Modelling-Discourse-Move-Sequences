@@ -13,8 +13,8 @@ from itertools import combinations
 from pathlib import Path
 
 BASE         = Path("/Users/macbook/Desktop/AIED cw2")
-SCORES_CSV   = BASE / os.environ.get("SCORES_CSV", "scores_n30_claude.csv")
-FEEDBACK_CSV = BASE / os.environ.get("FEEDBACK_CSV", "feedback_n30.csv")
+SCORES_CSV   = BASE / os.environ.get("SCORES_CSV", "scores_n60_claude_tasktopic.csv")
+FEEDBACK_CSV = BASE / os.environ.get("FEEDBACK_CSV", "feedback_n60.csv")
 OUT_CSV      = BASE / os.environ.get("OUT_CSV", "sensitivity_results.csv")
 
 CONDITIONS = ["RAG", "Baseline", "One-shot"]

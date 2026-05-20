@@ -1,9 +1,9 @@
 """
-generate_feedback_n30.py
-Generate RAG, baseline, and one-shot feedback for 30 A1 essays using qwen2.5:7b.
-Replaces scripts 07, 08, 09. All three conditions in one pass.
+generate_feedback.py
+Generate RAGF, ZSF, and OSF feedback for the selected A1 evaluation essays using qwen2.5:7b.
+All three conditions are generated in one resumable pass.
 
-Output: feedback_n30.csv
+Default output: feedback_n60.csv
 """
 
 import ast, os, time, editdistance, ollama
@@ -11,10 +11,10 @@ import numpy as np, pandas as pd
 from pathlib import Path
 
 BASE         = Path("/Users/macbook/Desktop/AIED cw2")
-EVAL_CSV     = BASE / os.environ.get("EVAL_CSV", "eval_essays_n30.csv")
+EVAL_CSV     = BASE / os.environ.get("EVAL_CSV", "eval_essays_n60.csv")
 SEQ_FILE     = BASE / "essay_sequences.csv"
 C2_CORPUS    = BASE / "c2_corpus.csv"
-OUT_CSV      = BASE / os.environ.get("OUT_CSV", "feedback_n30.csv")
+OUT_CSV      = BASE / os.environ.get("OUT_CSV", "feedback_n60.csv")
 MAX_ROWS     = int(os.environ.get("MAX_ROWS", "0"))
 
 MODEL = "qwen2.5:7b"
